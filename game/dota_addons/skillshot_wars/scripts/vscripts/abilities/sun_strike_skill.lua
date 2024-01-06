@@ -1,3 +1,5 @@
+-- Note: currently functions in this file are not used
+
 --[[Author: kritth, Pizzalol
 	Date: 20.04.2015.
 	Creates vision over the targeted area and creates the charge particle for every player
@@ -14,11 +16,9 @@ function sun_strike_charge( keys )
 	local charge_particle = keys.charge_particle
 	local delay = ability:GetLevelSpecialValueFor("delay", ability_level)
 	local area_of_effect = ability:GetLevelSpecialValueFor("area_of_effect", ability_level)
-	local vision_duration = ability:GetLevelSpecialValueFor("vision_duration", ability_level) 
-	local vision_distance = ability:GetLevelSpecialValueFor("vision_distance", ability_level) 
+	local vision_duration = ability:GetLevelSpecialValueFor("vision_duration", ability_level)
+	local vision_distance = ability:GetLevelSpecialValueFor("vision_distance", ability_level)
 	local all_heroes = HeroList:GetAllHeroes()
-
-	
 
 	-- Create the vision
 	local duration = delay + vision_duration
@@ -28,7 +28,7 @@ function sun_strike_charge( keys )
 	for _,hero in pairs(all_heroes) do
 		if hero:GetPlayerID() and hero:GetTeam() == caster_team then
 			local particle = ParticleManager:CreateParticleForPlayer(charge_particle, PATTACH_ABSORIGIN, hero, PlayerResource:GetPlayer(hero:GetPlayerID()))
-			ParticleManager:SetParticleControl(particle, 0, target_location) 
+			ParticleManager:SetParticleControl(particle, 0, target_location)
 			ParticleManager:SetParticleControl(particle, 1, Vector(area_of_effect,0,0))
 
 			-- Remove the particle after the charging is done
@@ -45,7 +45,7 @@ end
 function sun_strike_damage( keys )
 	local caster = keys.caster
 	local target = keys.target
-	local target_location = target:GetAbsOrigin() 
+	local target_location = target:GetAbsOrigin()
 	local ability = keys.ability
 	local ability_level = ability:GetLevel() - 1
 
@@ -65,7 +65,7 @@ function sun_strike_damage( keys )
 	local damage_table = {}
 	damage_table.attacker = caster
 	damage_table.ability = ability
-	damage_table.damage_type = ability:GetAbilityDamageType() 
+	damage_table.damage_type = ability:GetAbilityDamageType()
 	damage_table.damage = damage / #found_targets
 
 	-- Deal damage to each found hero
@@ -76,6 +76,6 @@ function sun_strike_damage( keys )
 
 	--Create impact particle
 	local particle = ParticleManager:CreateParticle(impact_particle, PATTACH_ABSORIGIN, caster)
-	ParticleManager:SetParticleControl(particle, 0, target_location) 
+	ParticleManager:SetParticleControl(particle, 0, target_location)
 	ParticleManager:SetParticleControl(particle, 1, Vector(area_of_effect,0,0))
 end
