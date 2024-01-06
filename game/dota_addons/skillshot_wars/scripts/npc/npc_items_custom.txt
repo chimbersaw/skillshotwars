@@ -822,7 +822,6 @@
       "item_tango"      "REMOVE"
       "item_tango_single"     "REMOVE"
 
-      "item_tpscroll"     "REMOVE"
       "item_recipe_travel_boots"      "REMOVE"
       "item_travel_boots"     "REMOVE"
       "item_recipe_phase_boots"     "REMOVE"
