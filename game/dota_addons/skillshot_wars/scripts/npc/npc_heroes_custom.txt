@@ -26,6 +26,8 @@
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
 		"Ability4"					"rattletrap_hookshot"
+		"Ability5"					""
+		"Ability6"					""
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -73,6 +75,8 @@
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
 		"Ability4"					"rattletrap_hookshot"
+		"Ability5"					""
+		"Ability6"					""
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -167,6 +171,8 @@
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
 		"Ability4"					"rattletrap_hookshot"
+		"Ability5"					""
+		"Ability6"					""
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -215,6 +221,8 @@
 		"Ability3"					"sun_strike_skill"
 		"Ability4"					"rattletrap_hookshot"
 		"Ability5"					""
+		"Ability6"					""
+		"Ability7"					""
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -312,6 +320,8 @@
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
 		"Ability4"					"rattletrap_hookshot"
+		"Ability5"					""
+		"Ability6"					""
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -359,6 +369,8 @@
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
 		"Ability4"					"rattletrap_hookshot"
+		"Ability5"					""
+		"Ability6"					""
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -468,6 +480,8 @@
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
 		"Ability4"					"rattletrap_hookshot"
+		"Ability5"					""
+		"Ability6"					""
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
