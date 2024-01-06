@@ -16,9 +16,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -63,9 +63,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -112,9 +112,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -161,9 +161,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -210,9 +210,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -259,9 +259,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 		"Ability7"					""
 
 		// Armor
@@ -309,9 +309,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -358,9 +358,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -407,9 +407,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -459,9 +459,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 		"Ability7"					""
 		"Ability8"					""
 		"Ability9"					""
@@ -518,9 +518,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -570,9 +570,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 		"Ability7"					""
 		"Ability8"					""
 
@@ -624,9 +624,9 @@
 		"Ability1"					"meat_hook_skill"
 		"Ability2"					"arrow_skill"
 		"Ability3"					"sun_strike_skill"
-		"Ability4"					"rattletrap_hookshot"
-		"Ability5"					""
-		"Ability6"					""
+		"Ability4"					"generic_hidden"
+		"Ability5"					"generic_hidden"
+		"Ability6"					"rattletrap_hookshot"
 		"Ability7"					""
 		"Ability8"					""
 
