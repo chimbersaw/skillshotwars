@@ -193,7 +193,6 @@ $RECYCLE.BIN/
 *.egg
 *.egg-info
 dist/
-build/
 eggs/
 parts/
 var/
@@ -214,6 +213,9 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
+**/.idea
+**/.DS_Store
+
 #############
 #  DOTA 2
 #############
@@ -224,11 +226,4 @@ pip-log.txt
 *.vsndevts_c
 *.vmat_c
 *.vtex_c
-*.bin
-/game/dota_addons/skillshot_wars/*.bin
-
-#Avoid leaking stats key
-settings.kv
-/game/dota_addons/skillshot_wars/maps
-/game/dota_addons/skillshot_wars/materials
-/game/dota_addons/skillshot_wars/panorama
+**/*.bin
