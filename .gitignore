@@ -227,3 +227,8 @@ pip-log.txt
 *.vmat_c
 *.vtex_c
 **/*.bin
+
+# No need to store these
+/game/dota_addons/skillshot_wars/maps
+/game/dota_addons/skillshot_wars/materials
+/game/dota_addons/skillshot_wars/panorama
