@@ -1,16 +1,13 @@
-
-#image_bg
-{
-	margin-left: 0%;
-}
-.Root
-{
-	width: 100%;
-	height: 100%;
+.Root {
+    width: 100%;
+    height: 100%;
 }
 
-.ImageBg
-{
-	min-width: 100%;
-	min-height: 100%;
+.ImageBg {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#image_bg {
+    margin-left: 0;
 }
