@@ -1,13 +1,21 @@
-"AddonInfo"
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 {
-	"maps"			"skillshot_wars skillshot_3v3"
-	"IsPlayable"	"1"
-	"skillshot_wars"
-	{
-					"MaxPlayers"                    "10"
-	}
-	"skillshot_3v3"
-	{
-					"MaxPlayers"                    "6"
-	}
+    IsPlayable = 1
+    maps =
+    [
+        "skillshot_wars",
+        "skillshot_3v3"
+    ]
+    DefaultMap = "skillshot_wars"
+    map_options =
+    [
+        {
+            map = "skillshot_wars"
+            MaxPlayers = 10
+        },
+       {
+            map = "skillshot_3v3"
+            MaxPlayers = 6
+        }
+    ]
 }
