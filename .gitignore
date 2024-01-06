@@ -1,3 +1,7 @@
+/*
+!/content/dota_addons/skillshot_wars
+!/game/dota_addons/skillshot_wars
+
 #################
 ## Eclipse
 #################
@@ -68,14 +72,12 @@ build/
 *.tlb
 *.tli
 *.tlh
-*.tmp
 *.tmp_proj
 *.log
 *.vspscc
 *.vssscc
 .builds
 *.pidb
-*.log
 *.scc
 
 # Visual C++ cache files
@@ -180,7 +182,7 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # Mac crap
-.DS_Store
+**/.DS_Store
 
 
 #############
@@ -207,14 +209,14 @@ pip-log.txt
 .coverage
 .tox
 
-#Translations
+# Translations
 *.mo
 
-#Mr Developer
+# Mr Developer
 .mr.developer.cfg
 
+# IDEA
 **/.idea
-**/.DS_Store
 
 #############
 #  DOTA 2
