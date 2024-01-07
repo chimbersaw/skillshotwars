@@ -1,6 +1,27 @@
+# Ignore all
 /*
+
+# Exclude .gitignore
+!/.gitignore
+
+# Exclude content/dota_addons/skillshot_wars
+!/content
+/content/*
+!/content/dota_addons
+/content/dota_addons/*
 !/content/dota_addons/skillshot_wars
+
+# Exclude game/dota_addons/skillshot_wars
+!/game
+/game/*
+!/game/dota_addons
+/game/dota_addons/*
 !/game/dota_addons/skillshot_wars
+
+# No need to store these
+/game/dota_addons/skillshot_wars/maps
+/game/dota_addons/skillshot_wars/materials
+/game/dota_addons/skillshot_wars/panorama
 
 #################
 ## Eclipse
@@ -183,7 +204,7 @@ $RECYCLE.BIN/
 
 # Mac crap
 **/.DS_Store
-
+**/._*
 
 #############
 ## Python
@@ -229,8 +250,3 @@ pip-log.txt
 *.vmat_c
 *.vtex_c
 **/*.bin
-
-# No need to store these
-/game/dota_addons/skillshot_wars/maps
-/game/dota_addons/skillshot_wars/materials
-/game/dota_addons/skillshot_wars/panorama
