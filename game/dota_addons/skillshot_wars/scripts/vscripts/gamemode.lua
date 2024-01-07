@@ -6,7 +6,7 @@ BAREBONES_VERSION = "1.00"
 BAREBONES_DEBUG_SPEW = true
 
 if GameMode == nil then
-    DebugPrint( '[BAREBONES] creating barebones game mode' )
+    DebugPrint('[BAREBONES] creating barebones game mode')
     _G.GameMode = class({})
 end
 
@@ -56,8 +56,8 @@ require('events')
 
   In this function, place all of your PrecacheItemByNameAsync and PrecacheUnitByNameAsync.  These calls will be made
   after all players have loaded in, but before they have selected their heroes. PrecacheItemByNameAsync can also
-  be used to precache dynamically-added datadriven abilities instead of items.  PrecacheUnitByNameAsync will 
-  precache the precache{} block statement of the unit and all precache{} block statements for every Ability# 
+  be used to precache dynamically-added datadriven abilities instead of items.  PrecacheUnitByNameAsync will
+  precache the precache{} block statement of the unit and all precache{} block statements for every Ability#
   defined on the unit.
 
   This function should only be called once.  If you want to/need to precache more items/abilities/units at a later
@@ -67,12 +67,12 @@ require('events')
   This function should generally only be used if the Precache() function in addon_game_mode.lua is not working.
 ]]
 function GameMode:PostLoadPrecache()
-  DebugPrint("[BAREBONES] Performing Post-Load precache")    
-  --PrecacheItemByNameAsync("item_example_item", function(...) end)
-  --PrecacheItemByNameAsync("example_ability", function(...) end)
+    DebugPrint("[BAREBONES] Performing Post-Load precache")
+    --PrecacheItemByNameAsync("item_example_item", function(...) end)
+    --PrecacheItemByNameAsync("example_ability", function(...) end)
 
-  --PrecacheUnitByNameAsync("npc_dota_hero_viper", function(...) end)
-  --PrecacheUnitByNameAsync("npc_dota_hero_enigma", function(...) end)
+    --PrecacheUnitByNameAsync("npc_dota_hero_viper", function(...) end)
+    --PrecacheUnitByNameAsync("npc_dota_hero_enigma", function(...) end)
 end
 
 --[[
@@ -80,7 +80,7 @@ end
   It can be used to initialize state that isn't initializeable in InitGameMode() but needs to be done before everyone loads in.
 ]]
 function GameMode:OnFirstPlayerLoaded()
-  DebugPrint("[BAREBONES] First Player has loaded")
+    DebugPrint("[BAREBONES] First Player has loaded")
 end
 
 --[[
@@ -88,7 +88,7 @@ end
   It can be used to initialize non-hero player state or adjust the hero selection (i.e. force random etc)
 ]]
 function GameMode:OnAllPlayersLoaded()
-  DebugPrint("[BAREBONES] All Players have loaded into the game")
+    DebugPrint("[BAREBONES] All Players have loaded into the game")
 end
 
 --[[
@@ -99,33 +99,33 @@ end
   The hero parameter is the hero entity that just spawned in
 ]]
 function GameMode:OnHeroInGame(hero)
-  DebugPrint("[BAREBONES] Hero spawned in game for first time -- " .. hero:GetUnitName())
+    DebugPrint("[BAREBONES] Hero spawned in game for first time -- " .. hero:GetUnitName())
 
 
 
-  --[[ --These lines if uncommented will replace the W ability of any hero that loads into the game
-    --with the "example_ability" ability
+    --[[ --These lines if uncommented will replace the W ability of any hero that loads into the game
+      --with the "example_ability" ability
 
-  local abil = hero:GetAbilityByIndex(1)
-  hero:RemoveAbility(abil:GetAbilityName())
-  hero:AddAbility("example_ability")]]
+    local abil = hero:GetAbilityByIndex(1)
+    hero:RemoveAbility(abil:GetAbilityName())
+    hero:AddAbility("example_ability")]]
 
-  -- Setup the hero.
+    -- Setup the hero.
 
-  hero:SetAbilityPoints(0)
+    hero:SetAbilityPoints(0)
 
-  -- Get rid of default xp bounty
-  hero:SetCustomDeathXP(0)
+    -- Get rid of default xp bounty
+    hero:SetCustomDeathXP(0)
 
-  -- Upgrade all the skills.
-  meat_hook_skill = Entities:FindByName(nil,"meat_hook_skill")
-  arrow_skill = Entities:FindByName(nil,"arrow_skill")
-  sun_strike = Entities:FindByName(nil,"sun_strike_skill")
-  rattletrap_hookshot = Entities:FindByClassname(nil,"rattletrap_hookshot")
-  hero:UpgradeAbility(meat_hook_skill)
-  hero:UpgradeAbility(arrow_skill)
-  hero:UpgradeAbility(sun_strike)
-  hero:UpgradeAbility(rattletrap_hookshot)
+    -- Upgrade all the skills.
+    meat_hook_skill = Entities:FindByName(nil, "meat_hook_skill")
+    arrow_skill = Entities:FindByName(nil, "arrow_skill")
+    sun_strike = Entities:FindByName(nil, "sun_strike_skill")
+    rattletrap_hookshot = Entities:FindByClassname(nil, "rattletrap_hookshot")
+    hero:UpgradeAbility(meat_hook_skill)
+    hero:UpgradeAbility(arrow_skill)
+    hero:UpgradeAbility(sun_strike)
+    hero:UpgradeAbility(rattletrap_hookshot)
 
 end
 
@@ -135,7 +135,7 @@ end
   is useful for starting any game logic timers/thinkers, beginning the first round, etc.
 ]]
 function GameMode:OnGameInProgress()
-  -- Don't do anything here.
+    -- Don't do anything here.
 end
 
 
@@ -143,11 +143,11 @@ end
 -- This function initializes the game mode and is called before anyone loads into the game
 -- It can be used to pre-initialize any values/tables that will be needed later
 function GameMode:InitGameMode()
-  GameMode = self
-  DebugPrint('[BAREBONES] Starting to load Barebones gamemode...')
+    GameMode = self
+    DebugPrint('[BAREBONES] Starting to load Barebones gamemode...')
 
-  --Turn off strategy time.
-  GameRules:SetStrategyTime(0)
+    --Turn off strategy time.
+    GameRules:SetStrategyTime(0)
 
-  DebugPrint('[BAREBONES] Done loading Barebones gamemode!\n\n')
+    DebugPrint('[BAREBONES] Done loading Barebones gamemode!\n\n')
 end
