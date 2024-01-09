@@ -2,5 +2,5 @@
 {
 	"Shader"	"ui.vfx"
 	"F_TRANSLUCENT"	"0"
-	"Texture"	"materials/overviews/skillshot_wars.tga"
+	"Texture"	"materials/overviews/tdm_5v5v5.tga"
 }

@@ -1,7 +1,8 @@
 skillshot_wars
 {
-    material materials/overviews/skillshot_wars.vmat
-    pos_x -5504
-    pos_y 3968
-    scale 10.500
+	material materials/overviews/skillshot_wars.vmat
+	pos_x -5504
+	pos_y 3968
+	scale 10.500
 }
+
