@@ -8,7 +8,7 @@
     //=================================================================================================================
     "npc_dota_hero_templar_assassin_skillshot"
     {
-        "override_hero"                "npc_dota_hero_templar_assassin"        // Hero to override
+        "override_hero"               "npc_dota_hero_templar_assassin"        // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -57,7 +57,7 @@
     //=================================================================================================================
     "npc_dota_hero_pudge_skillshot"
     {
-        "override_hero"                "npc_dota_hero_pudge"            // Hero to override
+        "override_hero"               "npc_dota_hero_pudge"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -72,33 +72,33 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 
     //=================================================================================================================
@@ -106,7 +106,7 @@
     //=================================================================================================================
     "npc_dota_hero_rattletrap_skillshot"
     {
-        "override_hero"                "npc_dota_hero_rattletrap"            // Hero to override
+        "override_hero"               "npc_dota_hero_rattletrap"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -121,33 +121,33 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 
     //=================================================================================================================
@@ -155,7 +155,7 @@
     //=================================================================================================================
     "npc_dota_hero_shredder_skillshot"
     {
-        "override_hero"                "npc_dota_hero_shredder"            // Hero to override
+        "override_hero"               "npc_dota_hero_shredder"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -170,33 +170,33 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 
     //=================================================================================================================
@@ -204,7 +204,7 @@
     //=================================================================================================================
     "npc_dota_hero_mirana_skillshot"
     {
-        "override_hero"                "npc_dota_hero_mirana"            // Hero to override
+        "override_hero"               "npc_dota_hero_mirana"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -219,33 +219,33 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 
     //=================================================================================================================
@@ -253,7 +253,7 @@
     //=================================================================================================================
     "npc_dota_hero_meepo_skillshot"
     {
-        "override_hero"                "npc_dota_hero_meepo"            // Hero to override
+        "override_hero"               "npc_dota_hero_meepo"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -269,33 +269,33 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 
     //=================================================================================================================
@@ -303,7 +303,7 @@
     //=================================================================================================================
     "npc_dota_hero_oracle_skillshot"
     {
-        "override_hero"                "npc_dota_hero_oracle"            // Hero to override
+        "override_hero"               "npc_dota_hero_oracle"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -318,33 +318,33 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 
     //=================================================================================================================
@@ -352,7 +352,7 @@
     //=================================================================================================================
     "npc_dota_hero_antimage_skillshot"
     {
-        "override_hero"                "npc_dota_hero_antimage"            // Hero to override
+        "override_hero"               "npc_dota_hero_antimage"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -367,33 +367,33 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 
     //=================================================================================================================
@@ -401,7 +401,7 @@
     //=================================================================================================================
     "npc_dota_hero_tinker_skillshot"
     {
-        "override_hero"                "npc_dota_hero_tinker"            // Hero to override
+        "override_hero"               "npc_dota_hero_tinker"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -416,33 +416,33 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 
     //=================================================================================================================
@@ -450,7 +450,7 @@
     //=================================================================================================================
     "npc_dota_hero_invoker_skillshot"
     {
-        "override_hero"                "npc_dota_hero_invoker"            // Hero to override
+        "override_hero"               "npc_dota_hero_invoker"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -478,33 +478,33 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 
     //=================================================================================================================
@@ -512,7 +512,7 @@
     //=================================================================================================================
     "npc_dota_hero_storm_spirit_skillshot"
     {
-        "override_hero"                "npc_dota_hero_storm_spirit"            // Hero to override
+        "override_hero"               "npc_dota_hero_storm_spirit"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -527,33 +527,33 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 
     //=================================================================================================================
@@ -561,7 +561,7 @@
     //=================================================================================================================
     "npc_dota_hero_techies_skillshot"
     {
-        "override_hero"                "npc_dota_hero_techies"            // Hero to override
+        "override_hero"               "npc_dota_hero_techies"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -581,33 +581,33 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 
     //=================================================================================================================
@@ -615,7 +615,7 @@
     //=================================================================================================================
     "npc_dota_hero_monkey_king_skillshot"
     {
-        "override_hero"                "npc_dota_hero_monkey_king"            // Hero to override
+        "override_hero"               "npc_dota_hero_monkey_king"            // Hero to override
 
         "StatusHealth"                "100"                                    // Base health.
 
@@ -635,32 +635,32 @@
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
-        "ArmorPhysical"            "-1"                                            // Physical protection.
-        "MagicalResistance"                "25"                                    // Magical protection (percentage).
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
 
         // Attack
         //-------------------------------------------------------------------------------------------------------------
-        "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
-        "AttackDamageMin"            "27"                                    // Damage range min.
-        "AttackDamageMax"            "33"                                    // Damage range max.
-        "AttackRate"                "1.7"                                    // Speed of attack.
-        "AttackAnimationPoint"        "0.5"                                    // Normalized time in animation cycle to attack.
-        "AttackAcquisitionRange"    "600"                                    // Range within a target can be acquired.
-        "AttackRange"                "128"                                    // Range within a target can be attacked.
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
 
         // Attributes
         //-------------------------------------------------------------------------------------------------------------
         "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
-        "AttributeBaseStrength"        "45"                                    // Base strength
-        "AttributeStrengthGain"        "0"                                    // Strength bonus per level.
-        "AttributeBaseIntelligence"    "1"                                    // Base intelligence
-        "AttributeIntelligenceGain"    "0"                                    // Intelligence bonus per level.
+        "AttributeBaseStrength"       "45"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "1"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
         "AttributeBaseAgility"        "14"                                    // Base agility
-        "AttributeAgilityGain"        "1.5"                                    // Agility bonus per level.
+        "AttributeAgilityGain"        "1.5"                                   // Agility bonus per level.
 
         // Movement
         //-------------------------------------------------------------------------------------------------------------
-        "MovementSpeed"                "350"                                    // Speed.
-        "MovementTurnRate"            "1"                                    // Turning rate.
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1"                                     // Turning rate.
     }
 }
