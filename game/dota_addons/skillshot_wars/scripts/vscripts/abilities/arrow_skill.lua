@@ -1,3 +1,5 @@
+-- Note: functions in this file are not used
+
 arrowTable = arrowTable or {}
 
 --[[Author: Pizzalol

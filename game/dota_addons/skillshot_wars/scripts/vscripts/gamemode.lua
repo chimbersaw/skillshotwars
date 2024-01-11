@@ -118,13 +118,13 @@ function GameMode:OnHeroInGame(hero)
     hero:SetCustomDeathXP(0)
 
     -- Upgrade all the skills.
-    meat_hook_skill = Entities:FindByName(nil, "meat_hook_skill")
-    arrow_skill = Entities:FindByName(nil, "arrow_skill")
-    sun_strike = Entities:FindByName(nil, "sun_strike_skill")
+    pudge_meat_hook = Entities:FindByName(nil, "pudge_meat_hook")
+    mirana_arrow = Entities:FindByName(nil, "mirana_arrow")
+    invoker_sun_strike = Entities:FindByName(nil, "invoker_sun_strike")
     rattletrap_hookshot = Entities:FindByClassname(nil, "rattletrap_hookshot")
-    hero:UpgradeAbility(meat_hook_skill)
-    hero:UpgradeAbility(arrow_skill)
-    hero:UpgradeAbility(sun_strike)
+    hero:UpgradeAbility(pudge_meat_hook)
+    hero:UpgradeAbility(mirana_arrow)
+    hero:UpgradeAbility(invoker_sun_strike)
     hero:UpgradeAbility(rattletrap_hookshot)
 
 end

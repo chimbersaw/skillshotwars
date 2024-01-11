@@ -1,3 +1,5 @@
+-- Note: functions in this file are not used
+
 meat_hook_skill = class({})
 LinkLuaModifier("modifier_meat_hook_skill_followthrough", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_meat_hook_skill", LUA_MODIFIER_MOTION_HORIZONTAL)

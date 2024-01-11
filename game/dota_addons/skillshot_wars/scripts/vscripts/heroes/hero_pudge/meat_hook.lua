@@ -1,3 +1,5 @@
+-- Note: functions in this file are not used
+
 -- Fix projectile offset to take into consideration the direction
 -- Fix motion controller
 -- Fix particles

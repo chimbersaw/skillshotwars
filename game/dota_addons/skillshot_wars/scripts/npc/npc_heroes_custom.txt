@@ -14,9 +14,9 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -63,9 +63,9 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -112,9 +112,9 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -161,9 +161,9 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -210,9 +210,9 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -259,9 +259,9 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -309,9 +309,9 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -358,9 +358,9 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -407,9 +407,9 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -459,9 +459,9 @@
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
         "AbilityLayout"                "4"
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -518,9 +518,9 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -570,9 +570,9 @@
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
         "AbilityLayout"                "4"
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
@@ -624,9 +624,9 @@
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
         "AbilityLayout"                "4"
-        "Ability1"                    "meat_hook_skill"
-        "Ability2"                    "arrow_skill"
-        "Ability3"                    "sun_strike_skill"
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"

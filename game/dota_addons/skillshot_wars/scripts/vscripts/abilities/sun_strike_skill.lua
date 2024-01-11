@@ -1,4 +1,4 @@
--- Note: currently functions in this file are not used
+-- Note: functions in this file are not used
 
 --[[Author: kritth, Pizzalol
     Date: 20.04.2015.

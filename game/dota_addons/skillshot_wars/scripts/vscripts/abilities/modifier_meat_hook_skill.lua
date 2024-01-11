@@ -1,3 +1,5 @@
+-- Note: functions in this file are not used
+
 modifier_meat_hook_skill = class({})
 --------------------------------------------------------------------------------
 
