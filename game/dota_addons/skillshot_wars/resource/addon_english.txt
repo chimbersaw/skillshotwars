@@ -5,8 +5,11 @@
     {
         "addon_game_name"                                            "Skillshot Wars"
 
-        "DOTA_Tooltip_Ability_sun_strike_skill"                      "Sun Strike"
-        "DOTA_Tooltip_Ability_sun_strike_skill_Description"          "Sends a catastrophic ray of fierce energy from the sun at any targeted location, incinerating all enemies standing beneath it once it reaches the earth."
+        "DOTA_Tooltip_ability_sun_strike_skill"                      "Sun Strike"
+        "DOTA_Tooltip_ability_sun_strike_skill_Description"          "Sends a catastrophic ray of fierce energy from the sun at any targeted location, incinerating all enemies standing beneath it once it reaches the earth. However, this damage is spread evenly over all enemies hit."
+        "DOTA_Tooltip_ability_sun_strike_skill_area_of_effect"       "RADIUS:"
+        "DOTA_Tooltip_ability_sun_strike_skill_delay"                "DELAY:"
+        "DOTA_Tooltip_ability_sun_strike_skill_damage"               "DAMAGE:"
 
         "DOTA_Tooltip_Ability_arrow_skill"                           "Sacred Arrow"
         "DOTA_Tooltip_Ability_arrow_skill_Description"               "Fires a long-range arrow with deadly precision, which stuns and damages the first enemy unit it strikes. The stun duration ranges from 0.01 to 5 seconds. With bonus damage up to 140, added, based on the distance the arrow travels to its target."
@@ -22,7 +25,7 @@
         "game_mode_15_desc"                                          "First team to 50 kills wins."
 
         "DOTA_Tooltip_Ability_item_scout_bot"                        "Scout Bot"
-        "DOTA_Tooltip_Ability_item_scout_bot_Description"            "Deploys a scout bot that gives vision.
+        "DOTA_Tooltip_Ability_item_scout_bot_Description"            "Deploys a scout bot that gives vision."
         "DOTA_Tooltip_Ability_item_scout_bot_distance"               "RANGE:"
         "DOTA_Tooltip_Ability_item_scout_bot_speed"                  "SPEED:"
         "DOTA_Tooltip_Ability_item_scout_bot_vision_radius"          "VISION RADIUS:"
