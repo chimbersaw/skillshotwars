@@ -29,7 +29,7 @@ function Precache(context)
     PrecacheUnitByNameSync("npc_dota_hero_tinker", context)
 
     -- Precache blink dagger.
-    PrecacheItemByNameSync("item_blink_skill", context)
+    PrecacheItemByNameSync("item_blink", context)
 
     -- Needed for gem of vengance.
     PrecacheUnitByNameSync("npc_dota_hero_vengefulspirit", context)
