@@ -167,8 +167,8 @@
             }
             "RunScript"
             {
-                "ScriptFile"    "abilities\swap.lua"
-                "Function"        "swap_ability"
+                "ScriptFile"    "items\swap.lua"
+                "Function"      "swap_ability"
             }
         }
     }
@@ -211,9 +211,9 @@
                         {
                             "RunScript"
                             {
-                                "ScriptFile"        "item_dummy.lua"
-                                "Function"            "FixItem"
-                                "RealItem"            "item_glimmer_cape"
+                                "ScriptFile"        "items\item_dummy.lua"
+                                "Function"          "FixItem"
+                                "RealItem"          "item_glimmer_cape"
                             }
                         }
                     }
@@ -264,9 +264,9 @@
                         {
                             "RunScript"
                             {
-                                "ScriptFile"        "item_dummy.lua"
-                                "Function"            "FixItem"
-                                "RealItem"            "item_manta"
+                                "ScriptFile"        "items\item_dummy.lua"
+                                "Function"          "FixItem"
+                                "RealItem"          "item_manta"
                             }
                         }
                     }
@@ -329,9 +329,9 @@
                         {
                             "RunScript"
                             {
-                                "ScriptFile"        "item_dummy.lua"
-                                "Function"            "FixItem"
-                                "RealItem"            "item_travel_boots_2"
+                                "ScriptFile"        "items\item_dummy.lua"
+                                "Function"          "FixItem"
+                                "RealItem"          "item_travel_boots_2"
                             }
                         }
                     }
@@ -381,9 +381,9 @@
                         {
                             "RunScript"
                             {
-                                "ScriptFile"        "item_dummy.lua"
-                                "Function"            "FixItem"
-                                "RealItem"            "item_refresher"
+                                "ScriptFile"        "items\item_dummy.lua"
+                                "Function"          "FixItem"
+                                "RealItem"          "item_refresher"
                             }
                         }
                     }

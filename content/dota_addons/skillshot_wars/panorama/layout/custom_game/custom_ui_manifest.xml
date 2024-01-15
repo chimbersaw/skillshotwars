@@ -1,4 +1,4 @@
-<root> 
+<root>
     <script>
         // These lines set up the panorama colors used by each team (for game select/setup, etc)
         GameUI.CustomUIConfig().team_colors = {}
