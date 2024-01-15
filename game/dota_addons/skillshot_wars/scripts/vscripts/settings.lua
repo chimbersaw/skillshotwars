@@ -138,8 +138,9 @@ FORCE_MINIMAP_ON_THE_LEFT                    = false -- Should we disable hud fl
 -- Note: Some players have minimap on the right and gold/shop on the left.
 
 USE_DEFAULT_RUNE_SYSTEM                      = false -- Should we use the default dota rune spawn timings and the same runes as dota have?
-BOUNTY_RUNE_SPAWN_INTERVAL                   = 3600  -- How long in seconds should we wait between bounty rune spawns? BUGGED! WORKS FOR POWERUPS TOO!
-POWER_RUNE_SPAWN_INTERVAL                    = 60    -- How long in seconds should we wait between power-up runes spawns? BUGGED! WORKS FOR BOUNTIES TOO!
+BOUNTY_RUNE_SPAWN_INTERVAL                   = 60    -- How long in seconds should we wait between bounty rune spawns? BUGGED! WORKS FOR POWERUPS TOO!
+POWER_RUNE_SPAWN_INTERVAL                    = 3600  -- How long in seconds should we wait between power-up runes spawns? BUGGED! WORKS FOR BOUNTIES TOO!
+-- Note: If you swap previous two values, the rune doesn't spawn on 01:00
 
 ENABLED_RUNES                                = {}    -- Which power-up runes should be enabled to spawn in our game mode?
 ENABLED_RUNES[DOTA_RUNE_DOUBLEDAMAGE]        = true
