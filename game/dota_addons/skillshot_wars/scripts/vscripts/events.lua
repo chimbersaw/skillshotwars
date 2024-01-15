@@ -16,7 +16,7 @@ end
 -- An item was purchased by a player
 function barebones:OnItemPurchased(keys)
     DebugPrint('[BAREBONES] OnItemPurchased')
-    PrintTable(keys)
+    --PrintTable(keys)
 
     -- The playerID of the hero who is buying something
     local plyID = keys.PlayerID
@@ -97,7 +97,7 @@ end
 
 -- An NPC has spawned somewhere in game. This includes heroes
 function barebones:OnNPCSpawned(keys)
-    --DebugPrint("[BAREBONES] A unit Spawned")
+    DebugPrint("[BAREBONES] A unit Spawned")
     --PrintTable(keys)
 
     local npc
@@ -286,7 +286,7 @@ end
 -- A non-player entity (necro-book, chen creep, etc) used an ability
 function barebones:OnNonPlayerUsedAbility(keys)
     DebugPrint('[BAREBONES] OnNonPlayerUsedAbility')
-    PrintTable(keys)
+    --PrintTable(keys)
 
     local abilityname = keys.abilityname
 end
@@ -366,7 +366,7 @@ end
 -- A channelled ability finished by either completing or being interrupted
 function barebones:OnAbilityChannelFinished(keys)
     DebugPrint('[BAREBONES] OnAbilityChannelFinished')
-    PrintTable(keys)
+    --PrintTable(keys)
 
     local abilityname = keys.abilityname
     local interrupted = keys.interrupted == 1
@@ -374,7 +374,7 @@ end
 
 -- A unit last hit a creep, a tower, or a hero
 function barebones:OnLastHit(keys)
-    --DebugPrint("[BAREBONES] OnLastHit event")
+    DebugPrint("[BAREBONES] OnLastHit event")
     --PrintTable(keys)
 
     local IsFirstBlood = keys.FirstBlood == 1
@@ -393,7 +393,7 @@ end
 
 -- A player changed their name
 function barebones:OnPlayerChangedName(keys)
-    --DebugPrint('[BAREBONES] OnPlayerChangedName')
+    DebugPrint('[BAREBONES] OnPlayerChangedName')
     --PrintTable(keys)
 
     local newName = keys.newname
@@ -413,7 +413,7 @@ end
 -- An entity somewhere has been hurt. This event fires very often with many units so don't do too many expensive
 -- operations here
 function barebones:OnEntityHurt(keys)
-    --DebugPrint("[BAREBONES] Entity Hurt")
+    DebugPrint("[BAREBONES] Entity Hurt")
     --PrintTable(keys)
 
     local damagebits = keys.damagebits -- This might always be 0 and therefore useless
@@ -446,7 +446,7 @@ end
 -- A player took damage from a tower
 function barebones:OnPlayerTakeTowerDamage(keys)
     DebugPrint('[BAREBONES] OnPlayerTakeTowerDamage')
-    PrintTable(keys)
+    --PrintTable(keys)
 
     local player = PlayerResource:GetPlayer(keys.PlayerID)
     local damage = keys.damage
@@ -492,7 +492,7 @@ end
 -- A player killed another player in a multi-team context
 function barebones:OnTeamKillCredit(keys)
     DebugPrint('[BAREBONES] OnTeamKillCredit')
-    PrintTable(keys)
+    --PrintTable(keys)
 
     local killerPlayer = PlayerResource:GetPlayer(keys.killer_userid)
     local killerHero = PlayerResource:GetSelectedHeroEntity(keys.killer_userid)
@@ -517,7 +517,7 @@ end
 
 -- An entity died (an entity killed an entity)
 function barebones:OnEntityKilled(keys)
-    --DebugPrint("[BAREBONES] An entity was killed.")
+    DebugPrint("[BAREBONES] An entity was killed.")
     --PrintTable(keys)
 
     -- Indexes:
@@ -711,7 +711,7 @@ end
 -- This function is called whenever illusions are created and tells you which was/is the original entity
 function barebones:OnIllusionsCreated(keys)
     DebugPrint('[BAREBONES] OnIllusionsCreated')
-    PrintTable(keys)
+    --PrintTable(keys)
 
     local originalEntity = EntIndexToHScript(keys.original_entindex)
 end
@@ -719,7 +719,7 @@ end
 -- This function is called whenever an item is combined to create a new item
 function barebones:OnItemCombined(keys)
     DebugPrint('[BAREBONES] OnItemCombined')
-    PrintTable(keys)
+    --PrintTable(keys)
 
     -- The playerID of the hero who is buying something
     local plyID = keys.PlayerID
@@ -738,7 +738,7 @@ end
 -- This function is called whenever an ability begins its PhaseStart phase (but before it is actually cast)
 function barebones:OnAbilityCastBegins(keys)
     DebugPrint('[BAREBONES] OnAbilityCastBegins')
-    PrintTable(keys)
+    --PrintTable(keys)
 
     local player = PlayerResource:GetPlayer(keys.PlayerID)
     local abilityName = keys.abilityname
@@ -766,7 +766,7 @@ end
 
 -- This function is called whenever an NPC reaches its goal position/target (npc can be a lane creep, goal entity can be a path corner)
 function barebones:OnNPCGoalReached(keys)
-    --DebugPrint("[BAREBONES] OnNPCGoalReached")
+    DebugPrint("[BAREBONES] OnNPCGoalReached")
     --PrintTable(keys)
 
     local goal_entity_index = keys.goal_entindex             -- Entity index of the next goal entity on the path (if any) which the npc will now be pathing towards
