@@ -489,16 +489,6 @@ function barebones:OnPlayerPickHero(keys)
     end)
 end
 
---WIN_CONDITION_KILLCOUNT = 50
---
----- Takes a team id and a killcount and ends the game if it's passed the win condition.
---function CheckWin(team, killCount)
---    if killCount >= WIN_CONDITION_KILLCOUNT then
---        --This number is how many points needed to win.
---        GameRules:SetGameWinner(team)
---    end
---end
-
 -- A player killed another player in a multi-team context
 function barebones:OnTeamKillCredit(keys)
     DebugPrint('[BAREBONES] OnTeamKillCredit')
@@ -523,8 +513,6 @@ function barebones:OnTeamKillCredit(keys)
             hero:ModifyGold(20, true, DOTA_ModifyGold_HeroKill)
         end
     end
-
-    --CheckWin(killerTeamNumber, numKills)
 end
 
 -- An entity died (an entity killed an entity)
