@@ -7,8 +7,10 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3133555056
 
 ## References
 
-https://github.com/DarkoniusXNG/barebones
+* https://github.com/computerkiwi/skillshotwars
 
-https://github.com/OpenAngelArena/oaa/blob/master/scripts/kv-lib.js
+* https://github.com/DarkoniusXNG/barebones
 
-https://github.com/spirit-bear-productions/dota_vpk_updates
+* https://github.com/OpenAngelArena/oaa/blob/master/scripts/kv-lib.js
+
+* https://github.com/spirit-bear-productions/dota_vpk_updates
