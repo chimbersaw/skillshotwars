@@ -349,7 +349,7 @@ function barebones:OnPlayerLevelUp(keys)
 
         -- Example how to add an extra skill point when a hero levels up
         --[[
-        local levels_without_ability_point = {17, 19, 21, 22, 23, 24}	-- on this levels you should get a skill point (edit this if needed)
+        local levels_without_ability_point = {17, 19, 21, 22, 23, 24} -- on this levels you should get a skill point (edit this if needed)
         for i = 1, #levels_without_ability_point do
             if level == levels_without_ability_point[i] then
                 local unspent_ability_points = hero:GetAbilityPoints()

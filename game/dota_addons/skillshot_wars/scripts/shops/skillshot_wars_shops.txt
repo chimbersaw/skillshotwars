@@ -67,5 +67,6 @@
         "item"      "item_blink"
         "item"      "item_travel_boots_2_dummy"
         "item"      "item_refresher_dummy"
+        "item"      "item_bloodstone_dummy"
     }
 }

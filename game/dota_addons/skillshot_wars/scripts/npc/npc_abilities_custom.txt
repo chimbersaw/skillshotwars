@@ -99,30 +99,34 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-        "MaxLevel"                      "1"
-        "HotKeyOverride"                "T"
-        "AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"
-        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
-        "FightRecapLevel"               "1"
-        "AbilitySound"                  "Hero_Invoker.SunStrike.Charge"
+        "AbilityBehavior"              "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+        "MaxLevel"                     "1"
+        "HotKeyOverride"               "T"
+        "AbilityUnitDamageType"        "DAMAGE_TYPE_PURE"
+        "SpellImmunityType"            "SPELL_IMMUNITY_ENEMIES_YES"
+        "FightRecapLevel"              "1"
+        "AbilitySound"                 "Hero_Invoker.SunStrike.Charge"
 
         // Stats
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastRange"     "0"
-        "AbilityCastPoint"     "0.05"
-        "AbilityCooldown"      "10"
-        "AbilityManaCost"      "0"
+        "AbilityCastRange"             "0"
+        "AbilityCastPoint"             "0.05"
+        "AbilityCooldown"              "10"
+        "AbilityManaCost"              "0"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-          "delay"              "1.7"
-          "area_of_effect"     "175"
-          "damage"             "300"
-          "vision_distance"    "400"
-          "vision_duration"    "4.0"
+          "delay"                      "1.7"
+          "area_of_effect"
+          {
+            "value"                    "175"
+            "affected_by_aoe_increase" "1"
+          }
+          "damage"                     "300"
+          "vision_distance"            "400"
+          "vision_duration"            "4.0"
         }
     }
 
