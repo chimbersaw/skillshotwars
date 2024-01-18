@@ -404,7 +404,7 @@
         "ItemPurchasable"                "1"
         "ItemDroppable"                  "1"
         "ItemSellable"                   "0"
-        "ItemCost"                       "1500"
+        "ItemCost"                       "2000"
         "SecretShop"                     "1"
         "Modifiers"
         {
@@ -434,7 +434,7 @@
         // Necessary for item description
         "AbilityValues"
         {
-          "bonus_aoe"             "75"
+          "bonus_aoe"             "50"
         }
     }
 
@@ -700,7 +700,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "ItemPurchasable"                "0"
         "ItemSellable"                   "0"
-        "ItemCost"                       "1500"
+        "ItemCost"                       "2000"
         "ItemShopTags"                   "regen_health;regen_mana;mana_pool;health_pool"
         "ItemQuality"                    "epic"
         "ItemAliases"                    "bs;bloodstone"
@@ -710,7 +710,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-          "bonus_aoe"            "75"
+          "bonus_aoe"            "50"
           "bonus_health"         "0"
           "bonus_mana"           "0"
           "spell_lifesteal"      "0"

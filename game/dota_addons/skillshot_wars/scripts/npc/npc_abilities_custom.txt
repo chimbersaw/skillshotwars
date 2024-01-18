@@ -35,7 +35,11 @@
         {
           "damage"            "175"
           "hook_speed"        "1600.0"
-          "hook_width"        "100"
+          "hook_width"
+          {
+            "value"                    "100"
+            "affected_by_aoe_increase" "1"
+          }
           "hook_distance"     "1300"
           "vision_radius"     "500"
           "vision_duration"   "4.0"
@@ -82,13 +86,21 @@
         "AbilityValues"
         {
           "arrow_speed"                 "900.0"
-          "arrow_width"                 "115"
+          "arrow_width"
+          {
+            "value"                    "115"
+            "affected_by_aoe_increase" "1"
+          }
           "arrow_range"                 "9000"
           "arrow_max_stunrange"         "1500"
           "arrow_min_stun"              "0.01"
           "arrow_max_stun"              "5.0"
           "arrow_bonus_damage"          "180"
-          "arrow_vision"                "650"
+          "arrow_vision"
+          {
+            "value"                    "650"
+            "affected_by_aoe_increase" "1"
+          }
         }
     }
 
@@ -161,8 +173,16 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-          "latch_radius"    "125"
-          "stun_radius"     "175"
+          "latch_radius"
+          {
+            "value"                    "125"
+            "affected_by_aoe_increase" "1"
+          }
+          "stun_radius"
+          {
+            "value"                    "175"
+            "affected_by_aoe_increase" "1"
+          }
           "duration"        "2.0"
           "speed"           "6000"
           "damage"          "275"
