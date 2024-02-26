@@ -173,6 +173,55 @@
         }
     }
 
+    "item_citrulline_malate"
+    {
+        // Item Stuff
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_lua"
+        "ScriptFile"                    "items/citrulline_malate.lua"
+        "AbilityTextureName"            "item_citrulline_malate"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+        "Model"                         "models/props_gameplay/mango.vmdl"
+        "FightRecapLevel"               "1"
+
+        // Time
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"                "0.0"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "100"
+        "ItemShopTags"                  "consumable"
+        "ItemQuality"                   "consumable"
+        "ItemStackable"                 "1"
+        "ItemStackableMax"              "5"
+        "ItemStockMax"                  "5"
+        "ItemStockInitial"              "1"
+        "ItemStockTime"                 "180"
+        "ItemInitialCharges"            "1"
+        "ItemPermanent"                 "0"
+
+        // Precache
+        //-------------------------------------------------------------------------------------------------------------
+        "precache"
+        {
+          "particle"                    "particles/items2_fx/satanic_buff.vpcf"
+        }
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+          "heal_amount"         "250"
+          "duration"            "5"
+          "bonus_strength"      "20"
+        }
+    }
+
     // Dummies
 
     "item_glimmer_cape_dummy"
@@ -469,7 +518,7 @@
 
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
-        "ItemCost"                        "200"
+        "ItemCost"                        "100"
         "ItemShopTags"                    "consumable"
         "ItemQuality"                    "consumable"
         "ItemAliases"                    "healing salve"

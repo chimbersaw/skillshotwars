@@ -5,6 +5,7 @@ BAREBONES_VERSION = "2.0.18"
 require('libraries/selection')
 
 -- settings.lua is where you can specify many different properties for your game mode and is one of the core barebones files.
+-- to use debug settings comment next line and uncomment the one after it
 require('settings')
 --require('debug_settings')
 require('map_settings')

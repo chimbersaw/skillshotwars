@@ -7,6 +7,7 @@
         "item"      "item_ward_sentry"
         "item"      "item_smoke_of_deceit"
         "item"      "item_flask"
+        "item"      "item_citrulline_malate"
     }
 
     "attributes"
