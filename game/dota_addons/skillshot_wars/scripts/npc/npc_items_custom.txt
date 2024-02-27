@@ -219,6 +219,7 @@
           "heal_amount"         "250"
           "duration"            "5"
           "bonus_strength"      "20"
+          "bonus_spell_amp"     "20"
         }
     }
 

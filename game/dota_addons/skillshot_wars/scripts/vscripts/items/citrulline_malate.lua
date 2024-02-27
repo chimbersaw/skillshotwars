@@ -28,6 +28,7 @@ function modifier_citrulline:OnCreated()
     local ability = self:GetAbility()
     if ability and not ability:IsNull() then
         self.bonus_strength = ability:GetSpecialValueFor("bonus_strength")
+        self.spell_amp = ability:GetSpecialValueFor("bonus_spell_amp")
     end
 end
 
@@ -57,15 +58,15 @@ end
 
 function modifier_citrulline:DeclareFunctions()
     return {
-        MODIFIER_PROPERTY_TOOLTIP,
-        MODIFIER_PROPERTY_STATS_STRENGTH_BONUS
+        MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
+        MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE
     }
-end
-
-function modifier_citrulline:OnTooltip()
-    return self.bonus_strength
 end
 
 function modifier_citrulline:GetModifierBonusStats_Strength()
     return self.bonus_strength
+end
+
+function modifier_citrulline:GetModifierSpellAmplify_Percentage()
+    return self.spell_amp
 end

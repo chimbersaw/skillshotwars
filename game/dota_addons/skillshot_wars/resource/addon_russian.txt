@@ -33,10 +33,10 @@
         "game_mode_15_desc"                                          "Побеждает первая команда, достигшая 50 убийств."
 
         "DOTA_Tooltip_ability_item_citrulline_malate"                "Цитрулин малат"
-        "DOTA_Tooltip_ability_item_citrulline_malate_Description"    "Мгновенно восстанавливает %heal_amount% здоровья и увеличивает силу на %bonus_strength% на %duration% секунд."
+        "DOTA_Tooltip_ability_item_citrulline_malate_Description"    "Мгновенно восстанавливает %heal_amount% здоровья и увеличивает силу на %bonus_strength% и дает +%bonus_spell_amp%%% к урону от заклинаний. Действует %duration% секунд."
 
         "DOTA_Tooltip_modifier_citrulline"                           "Цитрулин малат"
-        "DOTA_Tooltip_modifier_citrulline_description"               "Сила увеличена на %dMODIFIER_PROPERTY_TOOLTIP%%."
+        "DOTA_Tooltip_modifier_citrulline_description"               "Сила увеличена на %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%. <br> Урон от заклинаний увеличен на %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%%%."
 
         "DOTA_Tooltip_ability_item_scout_bot"                        "Мепалч"
         "DOTA_Tooltip_ability_item_scout_bot_Description"            "<h1>Активное: Mepalch</h1>Выпускает мепалча в выбранном направлении. <br><br> Мепалч пролетает %distance% расстояния, при этом давая обзор в радиусе %vision_radius%."
