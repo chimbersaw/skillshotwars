@@ -28,6 +28,25 @@
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
+        "Ability7"                    ""
+        "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -58,6 +77,90 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
+    }
+
+    //=================================================================================================================
+    // HERO: Brewmaster
+    //=================================================================================================================
+    "npc_dota_hero_brewmaster_skillshot"
+    {
+        "override_hero"               "npc_dota_hero_brewmaster"              // Hero to override
+
+        "StatusHealth"                "100"                                   // Base health.
+        "StatusHealthRegen"           "0.5"                                   // Base health regeneration.
+        "StatusMana"                  "239"                                   // Base mana.
+        "StatusManaRegen"             "0.1"                                   // Base mana regeneration.
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"        "1800"                                    // Range of vision during day light.
+        "VisionNighttimeRange"      "800"                                     // Range of vision at night time.
+
+        // Abilities
+        //-------------------------------------------------------------------------------------------------------------
+        "Ability1"                    "pudge_meat_hook"
+        "Ability2"                    "mirana_arrow"
+        "Ability3"                    "invoker_sun_strike"
+        "Ability4"                    "generic_hidden"
+        "Ability5"                    "generic_hidden"
+        "Ability6"                    "rattletrap_hookshot"
+        "Ability7"                    ""
+        "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
+
+        // Armor
+        //-------------------------------------------------------------------------------------------------------------
+        "ArmorPhysical"               "-1"                                    // Physical protection.
+        "MagicalResistance"           "25"                                    // Magical protection (percentage).
+
+        // Attack
+        //-------------------------------------------------------------------------------------------------------------
+        "AttackCapabilities"          "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageMin"             "27"                                    // Damage range min.
+        "AttackDamageMax"             "33"                                    // Damage range max.
+        "AttackRate"                  "1.7"                                   // Speed of attack.
+        "AttackAnimationPoint"        "0.5"                                   // Normalized time in animation cycle to attack.
+        "AttackAcquisitionRange"      "600"                                   // Range within a target can be acquired.
+        "AttackRange"                 "128"                                   // Range within a target can be attacked.
+
+        // Attributes
+        //-------------------------------------------------------------------------------------------------------------
+        "AttributePrimary"            "DOTA_ATTRIBUTE_STRENGTH"
+        "AttributeBaseStrength"       "50"                                    // Base strength
+        "AttributeStrengthGain"       "0"                                     // Strength bonus per level.
+        "AttributeBaseIntelligence"   "0"                                     // Base intelligence
+        "AttributeIntelligenceGain"   "0"                                     // Intelligence bonus per level.
+        "AttributeBaseAgility"        "14"                                    // Base agility
+        "AttributeAgilityGain"        "8.8"                                   // Agility bonus per level.
+
+        // Movement
+        //-------------------------------------------------------------------------------------------------------------
+        "MovementSpeed"               "350"                                   // Speed.
+        "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -85,6 +188,25 @@
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
+        "Ability7"                    ""
+        "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -115,6 +237,10 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -142,6 +268,25 @@
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
+        "Ability7"                    ""
+        "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -172,6 +317,10 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -199,6 +348,25 @@
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
+        "Ability7"                    ""
+        "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -229,6 +397,10 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -256,6 +428,25 @@
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
+        "Ability7"                    ""
+        "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -286,6 +477,10 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -314,6 +509,24 @@
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
         "Ability7"                    ""
+        "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -344,6 +557,10 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -371,6 +588,25 @@
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
+        "Ability7"                    ""
+        "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -401,6 +637,10 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -428,6 +668,25 @@
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
+        "Ability7"                    ""
+        "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -458,6 +717,10 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -485,6 +748,25 @@
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
+        "Ability7"                    ""
+        "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -515,6 +797,10 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -523,8 +809,6 @@
     "npc_dota_hero_invoker_skillshot"
     {
         "override_hero"               "npc_dota_hero_invoker"            // Hero to override
-
-        "LoadoutScale"                ".8"
 
         "StatusHealth"                "100"                                   // Base health.
         "StatusHealthRegen"           "0.5"                                   // Base health regeneration.
@@ -538,7 +822,6 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityLayout"               "4"
         "Ability1"                    "pudge_meat_hook"
         "Ability2"                    "mirana_arrow"
         "Ability3"                    "invoker_sun_strike"
@@ -555,6 +838,15 @@
         "Ability14"                   ""
         "Ability15"                   ""
         "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -585,6 +877,10 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -612,6 +908,25 @@
         "Ability4"                    "generic_hidden"
         "Ability5"                    "generic_hidden"
         "Ability6"                    "rattletrap_hookshot"
+        "Ability7"                    ""
+        "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -642,6 +957,10 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -651,8 +970,6 @@
     {
         "override_hero"               "npc_dota_hero_techies"            // Hero to override
 
-        "LoadoutScale"                ".8"
-
         "StatusHealth"                "100"                                   // Base health.
         "StatusHealthRegen"           "0.5"                                   // Base health regeneration.
         "StatusMana"                  "239"                                   // Base mana.
@@ -665,7 +982,6 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityLayout"               "4"
         "Ability1"                    "pudge_meat_hook"
         "Ability2"                    "mirana_arrow"
         "Ability3"                    "invoker_sun_strike"
@@ -674,6 +990,23 @@
         "Ability6"                    "rattletrap_hookshot"
         "Ability7"                    ""
         "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -704,6 +1037,10 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 
     //=================================================================================================================
@@ -713,8 +1050,6 @@
     {
         "override_hero"               "npc_dota_hero_monkey_king"            // Hero to override
 
-        "LoadoutScale"                ".8"
-
         "StatusHealth"                "100"                                   // Base health.
         "StatusHealthRegen"           "0.5"                                   // Base health regeneration.
         "StatusMana"                  "239"                                   // Base mana.
@@ -727,7 +1062,6 @@
 
         // Abilities
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityLayout"               "4"
         "Ability1"                    "pudge_meat_hook"
         "Ability2"                    "mirana_arrow"
         "Ability3"                    "invoker_sun_strike"
@@ -736,6 +1070,23 @@
         "Ability6"                    "rattletrap_hookshot"
         "Ability7"                    ""
         "Ability8"                    ""
+        "Ability9"                    ""
+        "Ability10"                   ""
+        "Ability11"                   ""
+        "Ability12"                   ""
+        "Ability13"                   ""
+        "Ability14"                   ""
+        "Ability15"                   ""
+        "Ability16"                   ""
+        "Ability17"                   ""
+        "Ability18"                   ""
+        "Ability19"                   ""
+        "Ability20"                   ""
+        "Ability21"                   ""
+        "Ability22"                   ""
+        "Ability23"                   ""
+        "Ability24"                   ""
+        "Ability25"                   "shlizi"
 
         // Armor
         //-------------------------------------------------------------------------------------------------------------
@@ -766,5 +1117,9 @@
         //-------------------------------------------------------------------------------------------------------------
         "MovementSpeed"               "350"                                   // Speed.
         "MovementTurnRate"            "1.0"                                   // Turning rate.
+
+        // Facets
+        //-------------------------------------------------------------------------------------------------------------
+        "Facets"{}
     }
 }

@@ -5,6 +5,8 @@
     {
         "addon_game_name"                                            "Skillshot Wars"
 
+        "DOTA_Tooltip_ability_shlizi"                                "Shlizi"
+
         "DOTA_Tooltip_ability_pudge_meat_hook"                       "Meat Hook"
         "DOTA_Tooltip_ability_pudge_meat_hook_Description"           "Launches a bloody hook toward a unit or location. The hook will snag the first unit it encounters, dragging the unit back to Pudge and dealing damage if it is an enemy."
         "DOTA_Tooltip_ability_pudge_meat_hook_hook_distance"         "RANGE:"
@@ -53,11 +55,13 @@
         "DOTA_Tooltip_ability_item_glimmer_cape_dummy_movement_speed"         "+$move_speed"
         "DOTA_Tooltip_ability_item_glimmer_cape_dummy_fade_delay"             "GLIMMER FADE TIME:"
         "DOTA_Tooltip_ability_item_glimmer_cape_bonus_magical_armor"          ""
+        "DOTA_Tooltip_ability_item_glimmer_cape_Lore"                         ""
 
         "DOTA_Tooltip_ability_item_manta_dummy"                               "Manta Style"
         "DOTA_Tooltip_ability_item_manta_dummy_Description"                   "<h1>Active: Mirror Image</h1>Creates %images_count% image of your hero that last %tooltip_illusion_duration% seconds. <br><br>Melee images deal %tooltip_damage_outgoing_melee%%% damage, while Ranged images deal %tooltip_damage_outgoing_ranged%%%. Illusions take %tooltip_damage_incoming_total_pct%%% damage. <br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
         "DOTA_Tooltip_ability_item_manta_dummy_bonus_movement_speed"          "%+$move_speed"
         "DOTA_Tooltip_ability_item_manta_dummy_images_count"                  "NUMBER OF IMAGES:"
+        "DOTA_Tooltip_ability_item_manta_Lore"                                ""
         "DOTA_Tooltip_ability_item_manta_bonus_agility"                       ""
         "DOTA_Tooltip_ability_item_manta_bonus_strength"                      ""
         "DOTA_Tooltip_ability_item_manta_bonus_intellect"                     ""
@@ -75,6 +79,7 @@
         "DOTA_Tooltip_ability_item_refresher_bonus_health_regen"              ""
         "DOTA_Tooltip_ability_item_refresher_bonus_mana_regen"                ""
         "DOTA_Tooltip_ability_item_refresher_bonus_damage"                    ""
+        "DOTA_Tooltip_ability_item_refresher_Lore"                            ""
 
         "DOTA_Tooltip_ability_item_bloodstone_dummy"                          "Bloodstone"
         "DOTA_Tooltip_ability_item_bloodstone_dummy_Description"              "<h1>Passive: AYE</h1> Increases AOE of all your spells."
@@ -85,5 +90,6 @@
         "DOTA_Tooltip_ability_item_bloodstone_bonus_health"                   ""
         "DOTA_Tooltip_ability_item_bloodstone_bonus_mana"                     ""
         "DOTA_Tooltip_ability_item_bloodstone_spell_lifesteal"                ""
+        "DOTA_Tooltip_ability_item_bloodstone_bonus_mp_regen"                 ""
     }
 }

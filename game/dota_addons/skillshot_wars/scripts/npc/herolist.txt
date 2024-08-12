@@ -18,4 +18,5 @@
     "npc_dota_hero_monkey_king"             "1"
     "npc_dota_hero_shredder"                "1"
     "npc_dota_hero_templar_assassin"        "1"
+    "npc_dota_hero_brewmaster"              "1"
 }

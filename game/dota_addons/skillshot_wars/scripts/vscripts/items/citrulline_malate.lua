@@ -17,7 +17,7 @@ function item_citrulline_malate:OnSpellStart()
     local dur = self:GetSpecialValueFor("duration")
     caster:AddNewModifier(caster, self, "modifier_citrulline", { duration = dur })
 
-    self:SpendCharge()
+    self:SpendCharge(1)
 end
 
 --------------------------------------------------------------------------------

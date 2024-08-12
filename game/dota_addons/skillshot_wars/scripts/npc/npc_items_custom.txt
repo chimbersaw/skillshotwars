@@ -167,7 +167,7 @@
             }
             "RunScript"
             {
-                "ScriptFile"    "items\swap.lua"
+                "ScriptFile"    "items/swap.lua"
                 "Function"      "swap_ability"
             }
         }
@@ -261,7 +261,7 @@
                         {
                             "RunScript"
                             {
-                                "ScriptFile"        "items\item_dummy.lua"
+                                "ScriptFile"        "items/item_dummy.lua"
                                 "Function"          "FixItem"
                                 "RealItem"          "item_glimmer_cape"
                             }
@@ -287,7 +287,7 @@
         "BaseClass"                     "item_datadriven"
         "AbilityTextureName"            "item_manta_dummy"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-        "AbilityCooldown"               "20.0"
+        "AbilityCooldown"               "18.0"
         "AbilityCastPoint"              "0.0"
         "Model"                         "models/props_gameplay/red_box.vmdl"
         "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
@@ -313,7 +313,7 @@
                         {
                             "RunScript"
                             {
-                                "ScriptFile"        "items\item_dummy.lua"
+                                "ScriptFile"        "items/item_dummy.lua"
                                 "Function"          "FixItem"
                                 "RealItem"          "item_manta"
                             }
@@ -374,7 +374,7 @@
                         {
                             "RunScript"
                             {
-                                "ScriptFile"        "items\item_dummy.lua"
+                                "ScriptFile"        "items/item_dummy.lua"
                                 "Function"          "FixItem"
                                 "RealItem"          "item_travel_boots_2"
                             }
@@ -426,7 +426,7 @@
                         {
                             "RunScript"
                             {
-                                "ScriptFile"        "items\item_dummy.lua"
+                                "ScriptFile"        "items/item_dummy.lua"
                                 "Function"          "FixItem"
                                 "RealItem"          "item_refresher"
                             }
@@ -471,7 +471,7 @@
                         {
                             "RunScript"
                             {
-                                "ScriptFile"        "items\item_dummy.lua"
+                                "ScriptFile"        "items/item_dummy.lua"
                                 "Function"          "FixItem"
                                 "RealItem"          "item_bloodstone"
                             }
@@ -569,7 +569,6 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
-        "ID"                             "254"                                                        // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
         "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
         "AbilityUnitTargetTeam"          "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
         "AbilityUnitTargetType"          "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -612,12 +611,11 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
-        "ID"                            "147"                                                        // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
         "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 
         // Stats
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"                "20.0"
+        "AbilityCooldown"                "18.0"
         "AbilityCastPoint"               "0.0"
 
         // Item Info
@@ -697,7 +695,6 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
-        "ID"                             "110"                                                        // unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
         "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
         // Stats
@@ -763,6 +760,7 @@
           "bonus_aoe"            "50"
           "bonus_health"         "0"
           "bonus_mana"           "0"
+          "bonus_mp_regen"       "0"
           "spell_lifesteal"      "0"
           "buff_duration"        "0"
           "lifesteal_multiplier" "0"
