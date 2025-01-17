@@ -235,11 +235,14 @@ function barebones:InitGameMode()
     LinkLuaModifier("modifier_custom_invulnerable", "modifiers/modifier_custom_invulnerable.lua", LUA_MODIFIER_MOTION_NONE)
     LinkLuaModifier("modifier_custom_passive_gold", "modifiers/modifier_custom_passive_gold.lua", LUA_MODIFIER_MOTION_NONE)
 
-    print("[BAREBONES] Initialized.")
-    DebugPrint("[BAREBONES] Done loading the game mode!\n\n")
-
     -- Increase/decrease maximum item limit per hero
     Convars:SetInt('dota_max_physical_items_purchase_limit', 64)
+
+    -- Change spectating delay
+    Convars:SetInt('tv_delay', 0)
+
+    print("[BAREBONES] Initialized.")
+    DebugPrint("[BAREBONES] Done loading the game mode!\n\n")
 end
 
 -- This function is called as the first player loads and sets up the game mode parameters
