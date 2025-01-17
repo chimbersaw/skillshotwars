@@ -409,7 +409,7 @@
         "ItemPurchasable" "1"
         "ItemDroppable" "1"
         "ItemSellable"                    "0"
-        "ItemCost"                        "2000"
+        "ItemCost"                        "2500"
         "SecretShop"                    "1"
         "Modifiers"
         {
@@ -707,7 +707,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "ItemPurchasable"                "0"
         "ItemSellable"                   "0"
-        "ItemCost"                       "2000"
+        "ItemCost"                       "2500"
         "ItemShopTags"                   "regen_health;regen_mana;hard_to_tag"
         "ItemQuality"                    "rare"
         "ItemAliases"                    "refresher orb"
