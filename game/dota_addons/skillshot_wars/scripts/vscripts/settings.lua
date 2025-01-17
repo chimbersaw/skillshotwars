@@ -19,7 +19,7 @@ TREE_REGROW_TIME = 60.0            -- How long should it take individual trees t
 
 --GOLD_PER_TICK = 2                -- How much gold should players get per tick? SetGoldTickTime DOESN'T WORK
 --GOLD_TICK_TIME = 5.0             -- How long should we wait in seconds between gold ticks? SetGoldPerTick DOESN'T WORK
-ADDITIONAL_GPM = 24                -- Uncomment this if you want additional gold per minute beside default
+ADDITIONAL_GPM = 72                -- Uncomment this if you want additional gold per minute beside default
 
 NORMAL_START_GOLD = 250                  -- Starting Gold
 
