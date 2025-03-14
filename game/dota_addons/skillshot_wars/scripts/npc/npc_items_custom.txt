@@ -1063,6 +1063,7 @@
     "item_angels_demise"            "REMOVE" // khanda
     "item_phylactery"               "REMOVE"
     "item_harpoon"                  "REMOVE"
+    "item_orb_of_frost"             "REMOVE"
 
     // Neutral items
     //"item_ancient_guardian"         "REMOVE"

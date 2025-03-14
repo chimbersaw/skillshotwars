@@ -85,6 +85,7 @@
         "DOTA_Tooltip_ability_item_bloodstone_dummy_Description"              "<h1>Пассивное: АУЕ</h1> Увеличивает AOE всех способностей владельца."
         "DOTA_Tooltip_ability_item_bloodstone_dummy_bonus_aoe"                "+$aoe_bonus"
         "DOTA_Tooltip_ability_item_bloodstone_Description"                    "<h1>Пассивное: АУЕ</h1> Увеличивает AOE всех способностей владельца."
+        "DOTA_Tooltip_ability_item_bloodstone_bonus_aoe"                      "+$aoe_bonus"
         "DOTA_Tooltip_ability_item_bloodstone_Note0"                          ""
         "DOTA_Tooltip_ability_item_bloodstone_Lore"                           ""
         "DOTA_Tooltip_ability_item_bloodstone_bonus_health"                   ""
