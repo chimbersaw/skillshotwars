@@ -70,5 +70,6 @@
         "item"      "item_bloodstone_dummy"
         "item"      "item_refresher_dummy"
         "item"      "item_kaya_dummy"
+        "item"      "item_octarine_core_dummy"
     }
 }

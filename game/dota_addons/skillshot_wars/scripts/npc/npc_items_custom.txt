@@ -507,7 +507,7 @@
             "fixitem"
             {
                 "IsHidden"    "1"
-                "Passive"    "1"
+                "Passive"     "1"
                 "OnCreated"
                 {
                     "DelayedAction"
@@ -533,6 +533,56 @@
 				"bonus_intellect"			"0"
 				"spell_amp"			        "50"
 				"mana_regen_multiplier"		"0"
+		}
+    }
+
+        "item_octarine_core_dummy"
+    {
+        "BaseClass"                      "item_datadriven"
+        "AbilityTextureName"             "item_octarine_core_dummy"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "Model"                          "models/props_gameplay/red_box.vmdl"
+        "Effect"                         "particles/generic_gameplay/dropped_item.vpcf"
+        "ItemQuality"                    "artifact"
+        "ItemKillable"                   "1"
+        "ItemPurchasable"                "1"
+        "ItemDroppable"                  "1"
+        "ItemSellable"                   "0"
+        "ItemCost"                       "1500"
+        "SecretShop"                     "1"
+        "Modifiers"
+        {
+            "fixitem"
+            {
+                "IsHidden"    "1"
+                "Passive"     "1"
+                "OnCreated"
+                {
+                    "DelayedAction"
+                    {
+                        "Delay"        "0.1"
+                        "Action"
+                        {
+                            "RunScript"
+                            {
+                                "ScriptFile"        "items/item_dummy.lua"
+                                "Function"          "FixItem"
+                                "RealItem"          "item_octarine_core"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Necessary for item description
+		"AbilityValues"
+		{
+			"bonus_cooldown"		"25"
+			"bonus_health"			"0"
+			"bonus_mana"			"0"
+			"bonus_health_regen"	"0"
+			"bonus_mana_regen"		"0"
 		}
     }
 
@@ -828,7 +878,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"1500"
-		"ItemShopTags"					"int;mana;magic_dmg"
+		"ItemShopTags"					"magic_dmg"
 		"ItemQuality"					"epic"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH"
 		"SuggestLategame"				"1"
@@ -842,6 +892,36 @@
 				"mana_regen_multiplier"		"0"
 		}
 	}
+
+    //=================================================================================================================
+	// Octarine Core
+	//=================================================================================================================
+	"item_octarine_core"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1500"
+		"ItemShopTags"					"a"
+		"ItemQuality"					"rare"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"SuggestLategame"				"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_cooldown"		"25"
+			"bonus_health"			"0"
+			"bonus_mana"			"0"
+			"bonus_health_regen"	"0"
+			"bonus_mana_regen"		"0"
+		}
+	}
+
 	
 
 	//
@@ -1056,7 +1136,6 @@
     "item_recipe_silver_edge"       "REMOVE"
     "item_silver_edge"              "REMOVE"
     "item_recipe_octarine_core"     "REMOVE"
-    "item_octarine_core"            "REMOVE"
     "item_recipe_solar_crest"       "REMOVE"
     "item_solar_crest"              "REMOVE"
     "item_recipe_guardian_greaves"  "REMOVE"
