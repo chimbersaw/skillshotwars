@@ -296,7 +296,7 @@
         "ItemPurchasable" "1"
         "ItemDroppable" "1"
         "ItemSellable"                  "0"
-        "ItemCost"                      "1200"
+        "ItemCost"                      "1000"
         "SecretShop"                    "1"
         "Modifiers"
         {
@@ -335,7 +335,7 @@
           "tooltip_damage_incoming_total_pct"    "10000"
           "images_do_damage_percent_ranged"      "-100"
           "tooltip_damage_outgoing_ranged"       "0"
-          "invuln_duration"                      "0.1"
+          "invuln_duration"                      "0.2"
           "vision_radius"                        "1000"
         }
     }
@@ -721,7 +721,7 @@
         "AbilityManaCost"                "0"
         "ItemSellable"                   "0"
         "ItemSellable"                   "0"
-        "ItemCost"                       "1200"
+        "ItemCost"                       "1000"
         "ItemPurchasable"                "0"
         "ItemShopTags"                   "agi;str;int;attack_speed;move_speed;hard_to_tag"
         "ItemQuality"                    "component"
@@ -746,7 +746,7 @@
           "tooltip_damage_incoming_total_pct"    "10000"
           "images_do_damage_percent_ranged"      "-100"
           "tooltip_damage_outgoing_ranged"       "0"
-          "invuln_duration"                      "0.1"
+          "invuln_duration"                      "0.2"
           "vision_radius"                        "1000"
         }
     }
