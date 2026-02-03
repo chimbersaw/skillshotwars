@@ -92,5 +92,11 @@
         "DOTA_Tooltip_ability_item_bloodstone_bonus_mana"                     ""
         "DOTA_Tooltip_ability_item_bloodstone_spell_lifesteal"                ""
         "DOTA_Tooltip_ability_item_bloodstone_bonus_mp_regen"                 ""
+
+        "DOTA_Tooltip_ability_item_kaya_dummy"                          "Kaya"
+        "DOTA_Tooltip_ability_item_kaya_dummy_Description"              "<h1>Пассивное</h1> Увеличивает урон от всех способностей владельца."
+        "DOTA_Tooltip_ability_item_kaya_dummy_spell_amp"                "%+$spell_amp"
+        "DOTA_Tooltip_ability_item_kaya_Description"                    "<h1>Пассивное</h1> Увеличивает урон от всех способностей владельца."
+        "DOTA_Tooltip_ability_item_kaya_spell_amp"                      "%+$spell_amp"
     }
 }
