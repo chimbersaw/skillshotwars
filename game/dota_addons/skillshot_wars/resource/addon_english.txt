@@ -91,5 +91,17 @@
         "DOTA_Tooltip_ability_item_bloodstone_bonus_mana"                     ""
         "DOTA_Tooltip_ability_item_bloodstone_spell_lifesteal"                ""
         "DOTA_Tooltip_ability_item_bloodstone_bonus_mp_regen"                 ""
+
+        "DOTA_Tooltip_ability_item_kaya_dummy"                                "Kaya"
+        "DOTA_Tooltip_ability_item_kaya_dummy_Description"                    "<h1>Passive</h1> Increases the damage from all the abilities of the owner."
+        "DOTA_Tooltip_ability_item_kaya_dummy_spell_amp"                      "%+$spell_amp"
+        "DOTA_Tooltip_ability_item_kaya_Description"                          "<h1>Passive</h1> Increases the damage from all the abilities of the owner."
+        "DOTA_Tooltip_ability_item_kaya_spell_amp"                            "%+$spell_amp"
+
+        "DOTA_Tooltip_ability_item_octarine_core_dummy"                       "Octarine core"
+        "DOTA_Tooltip_ability_item_octarine_core_dummy_Description"           "<h1>Passive: Cooldown Reduction</h1> Reduces the cooldown of all items and abilities."
+        "DOTA_Tooltip_ability_item_octarine_core_dummy_bonus_cooldown"        "%+$bonus_cooldown"
+        "DOTA_Tooltip_ability_item_octarine_core_Description"                 "<h1>Passive: Cooldown Reduction</h1> Reduces the cooldown of all items and abilities."
+        "DOTA_Tooltip_ability_item_octarine_core_bonus_cooldown"              "%+$bonus_cooldown"
     }
 }

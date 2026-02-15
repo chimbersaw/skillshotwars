@@ -11,7 +11,7 @@
         "Effect"                "particles/generic_gameplay/dropped_item.vpcf"
         "ItemQuality"  "artifact"
 
-        "ItemSellable"                    "0"
+        "ItemSellable"                    "1"
         "ItemCost"     "1000"
         "ItemKillable" "1"
         "ItemPurchasable" "1"
@@ -49,7 +49,7 @@
         {
           "distance"              "9000"
           "speed"                 "500"
-          "vision_radius"         "1500"
+          "vision_radius"         "900"
         }
         "precache"
         {
@@ -86,7 +86,7 @@
         "Effect"                "particles/generic_gameplay/dropped_item.vpcf"
         "ItemQuality"  "artifact"
 
-        "ItemSellable"    "0"
+        "ItemSellable"    "1"
         "ItemCost"     "1500"
         "ItemKillable" "1"
         "ItemPurchasable" "1"
@@ -243,7 +243,7 @@
         "ItemKillable" "0"
         "ItemPurchasable" "1"
         "ItemDroppable" "1"
-        "ItemSellable"                  "0"
+        "ItemSellable"                  "1"
         "ItemCost"                      "1200"
         "SecretShop"                    "1"
         "Modifiers"
@@ -295,7 +295,7 @@
         "ItemKillable" "0"
         "ItemPurchasable" "1"
         "ItemDroppable" "1"
-        "ItemSellable"                  "0"
+        "ItemSellable"                  "1"
         "ItemCost"                      "1000"
         "SecretShop"                    "1"
         "Modifiers"
@@ -356,7 +356,7 @@
         "ItemKillable" "0"
         "ItemPurchasable" "1"
         "ItemDroppable" "1"
-        "ItemSellable"                  "0"
+        "ItemSellable"                  "1"
         "ItemCost"                      "1500"
         "SecretShop"                    "1"
         "Modifiers"
@@ -408,7 +408,7 @@
         "ItemKillable" "0"
         "ItemPurchasable" "1"
         "ItemDroppable" "1"
-        "ItemSellable"                    "0"
+        "ItemSellable"                    "1"
         "ItemCost"                        "2500"
         "SecretShop"                    "1"
         "Modifiers"
@@ -453,7 +453,7 @@
         "ItemKillable"                   "1"
         "ItemPurchasable"                "1"
         "ItemDroppable"                  "1"
-        "ItemSellable"                   "0"
+        "ItemSellable"                   "1"
         "ItemCost"                       "2000"
         "SecretShop"                     "1"
         "Modifiers"
@@ -484,7 +484,7 @@
         // Necessary for item description
         "AbilityValues"
         {
-          "bonus_aoe"             "50"
+          "bonus_aoe"             "100"
         }
     }
 
@@ -499,7 +499,7 @@
         "ItemKillable"                   "1"
         "ItemPurchasable"                "1"
         "ItemDroppable"                  "1"
-        "ItemSellable"                   "0"
+        "ItemSellable"                   "1"
         "ItemCost"                       "1500"
         "SecretShop"                     "1"
         "Modifiers"
@@ -547,7 +547,7 @@
         "ItemKillable"                   "1"
         "ItemPurchasable"                "1"
         "ItemDroppable"                  "1"
-        "ItemSellable"                   "0"
+        "ItemSellable"                   "1"
         "ItemCost"                       "1500"
         "SecretShop"                     "1"
         "Modifiers"
@@ -638,7 +638,7 @@
     "item_boots"
     {
         "SecretShop"                    "1"
-        "ItemSellable"                    "0"
+        "ItemSellable"                    "1"
         "ItemCost"                        "750"
 
         "AbilityValues"
@@ -649,7 +649,7 @@
 
     "item_blink"
     {
-        "ItemSellable"                  "0"
+        "ItemSellable"                  "1"
         "ItemCost"                      "1500"
         "SecretShop"                    "1"
     }
@@ -681,7 +681,7 @@
 
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
-        "ItemSellable"                   "0"
+        "ItemSellable"                   "1"
         "ItemCost"                       "1200"
         "ItemShopTags"                   ""
         "ItemPurchasable"                "0"
@@ -719,8 +719,7 @@
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
         "AbilityManaCost"                "0"
-        "ItemSellable"                   "0"
-        "ItemSellable"                   "0"
+        "ItemSellable"                   "1"
         "ItemCost"                       "1000"
         "ItemPurchasable"                "0"
         "ItemShopTags"                   "agi;str;int;attack_speed;move_speed;hard_to_tag"
@@ -804,7 +803,7 @@
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
         "ItemPurchasable"                "0"
-        "ItemSellable"                   "0"
+        "ItemSellable"                   "1"
         "ItemCost"                       "2500"
         "ItemShopTags"                   "regen_health;regen_mana;hard_to_tag"
         "ItemQuality"                    "rare"
@@ -844,7 +843,7 @@
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
         "ItemPurchasable"                "0"
-        "ItemSellable"                   "0"
+        "ItemSellable"                   "1"
         "ItemCost"                       "2000"
         "ItemShopTags"                   "regen_health;regen_mana;mana_pool;health_pool"
         "ItemQuality"                    "epic"
@@ -855,7 +854,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-          "bonus_aoe"            "50"
+          "bonus_aoe"            "100"
           "bonus_health"         "0"
           "bonus_mana"           "0"
           "bonus_mp_regen"       "0"
