@@ -12,7 +12,7 @@
         "ItemQuality"                   "artifact"
 
         "ItemSellable"                  "1"
-        "ItemCost"                      "1000"
+        "ItemCost"                      "1200"
         "ItemKillable"                  "1"
         "ItemPurchasable"               "1"
         "ItemDroppable"                 "1"
@@ -409,7 +409,7 @@
         "ItemPurchasable"               "1"
         "ItemDroppable"                 "1"
         "ItemSellable"                  "1"
-        "ItemCost"                      "2500"
+        "ItemCost"                      "3000"
         "SecretShop"                    "1"
         "Modifiers"
         {
@@ -531,7 +531,7 @@
         "AbilityValues"
         {
           "bonus_intellect"            "0"
-          "spell_amp"                  "50"
+          "spell_amp"                  "20"
           "mana_regen_multiplier"      "0"
         }
     }
@@ -548,7 +548,7 @@
         "ItemPurchasable"               "1"
         "ItemDroppable"                 "1"
         "ItemSellable"                  "1"
-        "ItemCost"                      "1500"
+        "ItemCost"                      "2000"
         "SecretShop"                    "1"
         "Modifiers"
         {
@@ -804,7 +804,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "ItemPurchasable"               "0"
         "ItemSellable"                  "1"
-        "ItemCost"                      "2500"
+        "ItemCost"                      "3000"
         "ItemShopTags"                  "regen_health;regen_mana;hard_to_tag"
         "ItemQuality"                   "rare"
         "ItemAliases"                   "refresher orb"
@@ -884,12 +884,12 @@
         "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH"
         "SuggestLategame"               "1"
         
-        // Special    
+        // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
           "bonus_intellect"       "0"
-          "spell_amp"             "50"
+          "spell_amp"             "20"
           "mana_regen_multiplier" "0"
         }
     }
@@ -907,13 +907,13 @@
         //-------------------------------------------------------------------------------------------------------------
         "ItemPurchasable"               "0"
         "ItemSellable"                  "1"
-        "ItemCost"                      "1500"
+        "ItemCost"                      "2000"
         "ItemShopTags"                  "move_speed;boost_mana;mana_pool;mana"
         "ItemQuality"                   "rare"
         "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
         "SuggestLategame"               "1"
         
-        // Special    
+        // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
