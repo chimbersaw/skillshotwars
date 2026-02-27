@@ -94,15 +94,13 @@
         "DOTA_Tooltip_ability_item_bloodstone_bonus_mp_regen"                 ""
 
         "DOTA_Tooltip_ability_item_kaya_dummy"                                "Kaya"
-        "DOTA_Tooltip_ability_item_kaya_dummy_Description"                    "<h1>Пассивное</h1> Увеличивает урон от всех способностей владельца."
-        "DOTA_Tooltip_ability_item_kaya_dummy_spell_amp"                      "%+$spell_amp"
-        "DOTA_Tooltip_ability_item_kaya_Description"                          "<h1>Пассивное</h1> Увеличивает урон от всех способностей владельца."
-        "DOTA_Tooltip_ability_item_kaya_spell_amp"                            "%+$spell_amp"
+        "DOTA_Tooltip_ability_item_kaya_dummy_spell_amp"                      "%+к урону от заклинаний"
+        "DOTA_Tooltip_ability_item_kaya_spell_amp"                            "%+к урону от заклинаний"
 
         "DOTA_Tooltip_ability_item_octarine_core_dummy"                       "Octarine core"
-        "DOTA_Tooltip_ability_item_octarine_core_dummy_Description"           "<h1>Пассивное: Cooldown Reduction</h1> Уменьшает перезарядку всех предметов и способностей."
-        "DOTA_Tooltip_ability_item_octarine_core_dummy_bonus_cooldown"        "%+$bonus_cooldown"
-        "DOTA_Tooltip_ability_item_octarine_core_Description"                 "<h1>Пассивное: Cooldown Reduction</h1> Уменьшает перезарядку всех предметов и способностей."
-        "DOTA_Tooltip_ability_item_octarine_core_bonus_cooldown"              "%+$bonus_cooldown"
+        "DOTA_Tooltip_ability_item_octarine_core_dummy_Description"           "<h1>Пассивное: Cooldown Reduction</h1>Уменьшает перезарядку всех предметов и способностей."
+        "DOTA_Tooltip_ability_item_octarine_core_dummy_bonus_cooldown"        "%+$cooldown_reduction"
+        "DOTA_Tooltip_ability_item_octarine_core_Description"                 "<h1>Пассивное: Cooldown Reduction</h1>Уменьшает перезарядку всех предметов и способностей."
+        "DOTA_Tooltip_ability_item_octarine_core_bonus_cooldown"              "%+$cooldown_reduction"
     }
 }
