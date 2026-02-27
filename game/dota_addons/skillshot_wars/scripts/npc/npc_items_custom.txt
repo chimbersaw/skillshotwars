@@ -5,43 +5,43 @@
         // Item Stuff
         //-------------------------------------------------------------------------------------------------------------
 
-        "BaseClass"                "item_datadriven"
-        "AbilityTextureName"    "item_scout_bot"
-        "Model"                    "models/props_gameplay/red_box.vmdl"
-        "Effect"                "particles/generic_gameplay/dropped_item.vpcf"
-        "ItemQuality"  "artifact"
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "item_scout_bot"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "ItemQuality"                   "artifact"
 
-        "ItemSellable"                    "1"
-        "ItemCost"     "1000"
-        "ItemKillable" "1"
-        "ItemPurchasable" "1"
-        "ItemDroppable" "1"
-        "ItemShareability" "ITEM_NOT_SHAREABLE"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1000"
+        "ItemKillable"                  "1"
+        "ItemPurchasable"               "1"
+        "ItemDroppable"                 "1"
+        "ItemShareability"              "ITEM_NOT_SHAREABLE"
 
-        "SecretShop"   "1"
+        "SecretShop"                    "1"
 
-        "ItemStackable" "0"
-        "ItemPermanent" "1"
-        "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "ItemStackable"                 "0"
+        "ItemPermanent"                 "1"
+        "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
 
         // General
         //-------------------------------------------------------------------------------------------------------------
 
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-        "FightRecapLevel"                "1"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+        "FightRecapLevel"               "1"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastPoint"                "0.3"
-        "AbilityCastRange"                "0"
+        "AbilityCastPoint"              "0.3"
+        "AbilityCastRange"              "0"
 
         // Time
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"                "20.0"
+        "AbilityCooldown"               "20.0"
 
         // Cost
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"                "0"
+        "AbilityManaCost"               "0"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -80,52 +80,52 @@
         // Item Stuff
         //-------------------------------------------------------------------------------------------------------------
 
-        "BaseClass"                "item_datadriven"
-        "AbilityTextureName"    "item_gem_of_vengeance"
-        "Model"                    "models/props_gameplay/red_box.vmdl"
-        "Effect"                "particles/generic_gameplay/dropped_item.vpcf"
-        "ItemQuality"  "artifact"
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "item_gem_of_vengeance"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "ItemQuality"                   "artifact"
 
-        "ItemSellable"    "1"
-        "ItemCost"     "1500"
-        "ItemKillable" "1"
-        "ItemPurchasable" "1"
-        "ItemDroppable" "1"
-        "ItemShareability" "ITEM_NOT_SHAREABLE"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1500"
+        "ItemKillable"                  "1"
+        "ItemPurchasable"               "1"
+        "ItemDroppable"                 "1"
+        "ItemShareability"              "ITEM_NOT_SHAREABLE"
 
-        "SecretShop"   "1"
+        "SecretShop"                    "1"
 
-        "ItemStackable" "0"
-        "ItemPermanent" "1"
-        "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "ItemStackable"                 "0"
+        "ItemPermanent"                 "1"
+        "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
 
         // General
         //-------------------------------------------------------------------------------------------------------------
 
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-        "AbilityUnitTargetTeam"            "DOTA_UNIT_TARGET_TEAM_BOTH"
-        "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO"
-        "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
-        "FightRecapLevel"                "1"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_BOTH"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "FightRecapLevel"               "1"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastPoint"                "0.3"
-        "AbilityCastRange"                "1300"
+        "AbilityCastPoint"              "0.3"
+        "AbilityCastRange"              "1300"
 
         // Time
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"                "15.0"
+        "AbilityCooldown"               "15.0"
 
         // Cost
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"                "0"
+        "AbilityManaCost"               "0"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-          "range"                        "1300"
+          "range"                       "1300"
         }
         "OnSpellStart"
         {
@@ -190,7 +190,7 @@
 
         // Time
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"                "0.0"
+        "AbilityCooldown"               "0.0"
 
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
@@ -239,10 +239,10 @@
         "AbilityManaCost"               "0"
         "Model"                         "models/props_gameplay/red_box.vmdl"
         "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
-        "ItemQuality"  "artifact"
-        "ItemKillable" "0"
-        "ItemPurchasable" "1"
-        "ItemDroppable" "1"
+        "ItemQuality"                   "artifact"
+        "ItemKillable"                  "0"
+        "ItemPurchasable"               "1"
+        "ItemDroppable"                 "1"
         "ItemSellable"                  "1"
         "ItemCost"                      "1200"
         "SecretShop"                    "1"
@@ -291,10 +291,10 @@
         "AbilityCastPoint"              "0.0"
         "Model"                         "models/props_gameplay/red_box.vmdl"
         "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
-        "ItemQuality"  "artifact"
-        "ItemKillable" "0"
-        "ItemPurchasable" "1"
-        "ItemDroppable" "1"
+        "ItemQuality"                   "artifact"
+        "ItemKillable"                  "0"
+        "ItemPurchasable"               "1"
+        "ItemDroppable"                 "1"
         "ItemSellable"                  "1"
         "ItemCost"                      "1000"
         "SecretShop"                    "1"
@@ -352,10 +352,10 @@
         "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
         "Model"                         "models/props_gameplay/red_box.vmdl"
         "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
-        "ItemQuality"  "artifact"
-        "ItemKillable" "0"
-        "ItemPurchasable" "1"
-        "ItemDroppable" "1"
+        "ItemQuality"                   "artifact"
+        "ItemKillable"                  "0"
+        "ItemPurchasable"               "1"
+        "ItemDroppable"                 "1"
         "ItemSellable"                  "1"
         "ItemCost"                      "1500"
         "SecretShop"                    "1"
@@ -397,19 +397,19 @@
 
     "item_refresher_dummy"
     {
-        "BaseClass"                        "item_datadriven"
+        "BaseClass"                     "item_datadriven"
         "AbilityTextureName"            "item_refresher_dummy"
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-        "AbilityCastPoint"               "0.0"
-        "AbilityCooldown"                "45.0"
-        "Model"                          "models/props_gameplay/red_box.vmdl"
-        "Effect"                         "particles/generic_gameplay/dropped_item.vpcf"
-        "ItemQuality"  "artifact"
-        "ItemKillable" "0"
-        "ItemPurchasable" "1"
-        "ItemDroppable" "1"
-        "ItemSellable"                    "1"
-        "ItemCost"                        "2500"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityCastPoint"              "0.0"
+        "AbilityCooldown"               "45.0"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "ItemQuality"                   "artifact"
+        "ItemKillable"                  "0"
+        "ItemPurchasable"               "1"
+        "ItemDroppable"                 "1"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "2500"
         "SecretShop"                    "1"
         "Modifiers"
         {
@@ -444,24 +444,24 @@
 
     "item_bloodstone_dummy"
     {
-        "BaseClass"                      "item_datadriven"
-        "AbilityTextureName"             "item_bloodstone_dummy"
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "Model"                          "models/props_gameplay/red_box.vmdl"
-        "Effect"                         "particles/generic_gameplay/dropped_item.vpcf"
-        "ItemQuality"                    "artifact"
-        "ItemKillable"                   "1"
-        "ItemPurchasable"                "1"
-        "ItemDroppable"                  "1"
-        "ItemSellable"                   "1"
-        "ItemCost"                       "2000"
-        "SecretShop"                     "1"
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "item_bloodstone_dummy"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "ItemQuality"                   "artifact"
+        "ItemKillable"                  "1"
+        "ItemPurchasable"               "1"
+        "ItemDroppable"                 "1"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "2000"
+        "SecretShop"                    "1"
         "Modifiers"
         {
             "fixitem"
             {
                 "IsHidden"    "1"
-                "Passive"    "1"
+                "Passive"     "1"
                 "OnCreated"
                 {
                     "DelayedAction"
@@ -484,24 +484,24 @@
         // Necessary for item description
         "AbilityValues"
         {
-          "bonus_aoe"             "100"
+          "bonus_aoe"             "50"
         }
     }
 
     "item_kaya_dummy"
     {
-        "BaseClass"                      "item_datadriven"
-        "AbilityTextureName"             "item_kaya_dummy"
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "Model"                          "models/props_gameplay/red_box.vmdl"
-        "Effect"                         "particles/generic_gameplay/dropped_item.vpcf"
-        "ItemQuality"                    "artifact"
-        "ItemKillable"                   "1"
-        "ItemPurchasable"                "1"
-        "ItemDroppable"                  "1"
-        "ItemSellable"                   "1"
-        "ItemCost"                       "1500"
-        "SecretShop"                     "1"
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "item_kaya_dummy"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "ItemQuality"                   "artifact"
+        "ItemKillable"                  "1"
+        "ItemPurchasable"               "1"
+        "ItemDroppable"                 "1"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1500"
+        "SecretShop"                    "1"
         "Modifiers"
         {
             "fixitem"
@@ -528,28 +528,28 @@
         }
 
         // Necessary for item description
-		"AbilityValues"
-		{
-				"bonus_intellect"			"0"
-				"spell_amp"			        "50"
-				"mana_regen_multiplier"		"0"
-		}
+        "AbilityValues"
+        {
+          "bonus_intellect"            "0"
+          "spell_amp"                  "50"
+          "mana_regen_multiplier"      "0"
+        }
     }
 
-        "item_octarine_core_dummy"
+    "item_octarine_core_dummy"
     {
-        "BaseClass"                      "item_datadriven"
-        "AbilityTextureName"             "item_octarine_core_dummy"
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "Model"                          "models/props_gameplay/red_box.vmdl"
-        "Effect"                         "particles/generic_gameplay/dropped_item.vpcf"
-        "ItemQuality"                    "artifact"
-        "ItemKillable"                   "1"
-        "ItemPurchasable"                "1"
-        "ItemDroppable"                  "1"
-        "ItemSellable"                   "1"
-        "ItemCost"                       "1500"
-        "SecretShop"                     "1"
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "item_octarine_core_dummy"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "ItemQuality"                   "artifact"
+        "ItemKillable"                  "1"
+        "ItemPurchasable"               "1"
+        "ItemDroppable"                 "1"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1500"
+        "SecretShop"                    "1"
         "Modifiers"
         {
             "fixitem"
@@ -576,14 +576,14 @@
         }
 
         // Necessary for item description
-		"AbilityValues"
-		{
-			"bonus_cooldown"		"25"
-			"bonus_health"			"0"
-			"bonus_mana"			"0"
-			"bonus_health_regen"	"0"
-			"bonus_mana_regen"		"0"
-		}
+        "AbilityValues"
+        {
+          "bonus_cooldown"        "25"
+          "bonus_health"          "0"
+          "bonus_mana"            "0"
+          "bonus_health_regen"    "0"
+          "bonus_mana_regen"      "0"
+        }
     }
 
     // ITEM CLEARING
@@ -612,17 +612,17 @@
         "SecretShop"                    "0"
         // Stats
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastRange"                "250"
-        "AbilityCastPoint"                "0.0"
+        "AbilityCastRange"              "250"
+        "AbilityCastPoint"              "0.0"
 
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
-        "ItemCost"                        "100"
-        "ItemShopTags"                    "consumable"
-        "ItemQuality"                    "consumable"
-        "ItemAliases"                    "healing salve"
-        "ItemStackable"                    "1"
-        "ItemPermanent"                    "0"
+        "ItemCost"                      "100"
+        "ItemShopTags"                  "consumable"
+        "ItemQuality"                   "consumable"
+        "ItemAliases"                   "healing salve"
+        "ItemStackable"                 "1"
+        "ItemPermanent"                 "0"
         "ItemInitialCharges"            "1"
 
         // Special
@@ -638,8 +638,8 @@
     "item_boots"
     {
         "SecretShop"                    "1"
-        "ItemSellable"                    "1"
-        "ItemCost"                        "750"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "750"
 
         "AbilityValues"
         {
@@ -656,8 +656,8 @@
 
     "item_tpscroll"
     {
-        "AbilityManaCost"                "0"
-        "ItemCost"                       "50"
+        "AbilityManaCost"               "0"
+        "ItemCost"                      "50"
     }
 
     //=================================================================================================================
@@ -667,38 +667,38 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
-        "AbilityUnitTargetTeam"          "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-        "AbilityUnitTargetType"          "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-        "FightRecapLevel"                "1"
-        "SpellDispellableType"           "SPELL_DISPELLABLE_YES"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "FightRecapLevel"               "1"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
 
         // Stats
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastRange"               "900"
-        "AbilityCooldown"                "16.0"
-        "AbilityManaCost"                "0"
+        "AbilityCastRange"              "900"
+        "AbilityCooldown"               "16.0"
+        "AbilityManaCost"               "0"
 
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
-        "ItemSellable"                   "1"
-        "ItemCost"                       "1200"
-        "ItemShopTags"                   ""
-        "ItemPurchasable"                "0"
-        "ItemQuality"                    "rare"
-        "ItemAliases"                    "glimmer cape"
-        "ItemDisassembleRule"            "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1200"
+        "ItemShopTags"                  ""
+        "ItemPurchasable"               "0"
+        "ItemQuality"                   "rare"
+        "ItemAliases"                   "glimmer cape"
+        "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-          "initial_fade_delay"           "0.5"
-          "secondary_fade_delay"         "0.5"
-          "active_movement_speed"        "40"
-          "duration"                     "5"
-          "bonus_magical_armor"          "0"
-          "barrier_block"                "100"
+          "initial_fade_delay"          "0.5"
+          "secondary_fade_delay"        "0.5"
+          "active_movement_speed"       "40"
+          "duration"                    "5"
+          "bonus_magical_armor"         "0"
+          "barrier_block"               "100"
         }
     }
 
@@ -709,24 +709,24 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 
         // Stats
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"                "18.0"
-        "AbilityCastPoint"               "0.0"
+        "AbilityCooldown"               "18.0"
+        "AbilityCastPoint"              "0.0"
 
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"                "0"
-        "ItemSellable"                   "1"
-        "ItemCost"                       "1000"
-        "ItemPurchasable"                "0"
-        "ItemShopTags"                   "agi;str;int;attack_speed;move_speed;hard_to_tag"
-        "ItemQuality"                    "component"
-        "ItemAliases"                    "manta style"
-        "ItemDisassembleRule"            "DOTA_ITEM_DISASSEMBLE_NEVER"
-        "ItemDeclarations"               "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "AbilityManaCost"               "0"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1000"
+        "ItemPurchasable"               "0"
+        "ItemShopTags"                  "agi;str;int;attack_speed;move_speed;hard_to_tag"
+        "ItemQuality"                   "component"
+        "ItemAliases"                   "manta style"
+        "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -792,34 +792,34 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
         // Stats
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastPoint"               "0.0"
-        "AbilityCooldown"                "45.0"
-        "AbilityManaCost"                "0"
+        "AbilityCastPoint"              "0.0"
+        "AbilityCooldown"               "45.0"
+        "AbilityManaCost"               "0"
 
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
-        "ItemPurchasable"                "0"
-        "ItemSellable"                   "1"
-        "ItemCost"                       "2500"
-        "ItemShopTags"                   "regen_health;regen_mana;hard_to_tag"
-        "ItemQuality"                    "rare"
-        "ItemAliases"                    "refresher orb"
-        "ItemDeclarations"               "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
-        "ItemDisassembleRule"            "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "ItemPurchasable"               "0"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "2500"
+        "ItemShopTags"                  "regen_health;regen_mana;hard_to_tag"
+        "ItemQuality"                   "rare"
+        "ItemAliases"                   "refresher orb"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-          "bonus_health"                              "0"
-          "bonus_mana"                                "0"
-          "bonus_health_regen"                        "0"
-          "bonus_mana_regen"                          "0"
-          "bonus_damage"                              "0"
+          "bonus_health"                "0"
+          "bonus_mana"                  "0"
+          "bonus_health_regen"          "0"
+          "bonus_mana_regen"            "0"
+          "bonus_damage"                "0"
         }
     }
 
@@ -830,31 +830,31 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "FightRecapLevel"                "2"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "FightRecapLevel"               "2"
 
         // Stats
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastPoint"               ""
-        "AbilityCooldown"                ""
-        "AbilityManaCost"                ""
-        "AbilityUnitDamageType"          ""
+        "AbilityCastPoint"              ""
+        "AbilityCooldown"               ""
+        "AbilityManaCost"               ""
+        "AbilityUnitDamageType"         ""
 
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
-        "ItemPurchasable"                "0"
-        "ItemSellable"                   "1"
-        "ItemCost"                       "2000"
-        "ItemShopTags"                   "regen_health;regen_mana;mana_pool;health_pool"
-        "ItemQuality"                    "epic"
-        "ItemAliases"                    "bs;bloodstone"
-        "ItemDeclarations"               "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "ItemPurchasable"               "0"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "2000"
+        "ItemShopTags"                  "regen_health;regen_mana;mana_pool;health_pool"
+        "ItemQuality"                   "epic"
+        "ItemAliases"                   "bs;bloodstone"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
-          "bonus_aoe"            "100"
+          "bonus_aoe"            "50"
           "bonus_health"         "0"
           "bonus_mana"           "0"
           "bonus_mp_regen"       "0"
@@ -866,64 +866,65 @@
     }
 
     //=================================================================================================================
-	// Kaya
-	//=================================================================================================================
-	"item_kaya"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    // Kaya
+    //=================================================================================================================
+    "item_kaya"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"1500"
-		"ItemShopTags"					"magic_dmg"
-		"ItemQuality"					"epic"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH"
-		"SuggestLategame"				"1"
-		
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityValues"
-		{
-				"bonus_intellect"			"0"
-				"spell_amp"			        "50"
-				"mana_regen_multiplier"		"0"
-		}
-	}
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemPurchasable"               "0"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1500"
+        "ItemShopTags"                  "int;mana;magic_dmg"
+        "ItemQuality"                   "epic"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH"
+        "SuggestLategame"               "1"
+        
+        // Special    
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+          "bonus_intellect"       "0"
+          "spell_amp"             "50"
+          "mana_regen_multiplier" "0"
+        }
+    }
 
     //=================================================================================================================
-	// Octarine Core
-	//=================================================================================================================
-	"item_octarine_core"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    // Octarine Core
+    //=================================================================================================================
+    "item_octarine_core"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"1500"
-		"ItemShopTags"					"a"
-		"ItemQuality"					"rare"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
-		"SuggestLategame"				"1"
-		
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityValues"
-		{
-			"bonus_cooldown"		"25"
-			"bonus_health"			"0"
-			"bonus_mana"			"0"
-			"bonus_health_regen"	"0"
-			"bonus_mana_regen"		"0"
-		}
-	}
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemPurchasable"               "0"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1500"
+        "ItemShopTags"                  "move_speed;boost_mana;mana_pool;mana"
+        "ItemQuality"                   "rare"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+        "SuggestLategame"               "1"
+        
+        // Special    
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+          "bonus_cooldown"        "25"
+          "bonus_health"          "0"
+          "bonus_mana"            "0"
+          "bonus_health_regen"    "0"
+          "bonus_mana_regen"      "0"
+        }
+    }
 
-	
-
-	//
 
     // -----------------------------------------------------------
     // - REMOVE ANY ITEM YOU DON'T WANT TO BE BUYABLE IN THE SHOP -
