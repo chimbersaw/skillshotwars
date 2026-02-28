@@ -126,7 +126,9 @@ end
 FOUNTAIN_CONSTANT_MANA_REGEN                 = -1    -- What should we use for the constant fountain mana regen?  Use -1 to keep the default dota behavior.
 FOUNTAIN_PERCENTAGE_MANA_REGEN               = -1    -- What should we use for the percentage fountain mana regen?  Use -1 to keep the default dota behavior.
 FOUNTAIN_PERCENTAGE_HEALTH_REGEN             = 10    -- What should we use for the percentage fountain health regen?  Use -1 to keep the default dota behavior.
-FOUNTAIN_ENEMY_DAMAGE_MULTIPLIER             = 0.15   -- Multiplier applied to fountain damage against enemy player-controlled units.
+FOUNTAIN_PERCENTAGE_HEALTH_REGEN_DAMAGED     = 2     -- Fountain health regen percentage while the unit was damaged recently.
+FOUNTAIN_RECENT_DAMAGE_WINDOW                = 5     -- Seconds after taking damage where the reduced fountain health regen is used.
+FOUNTAIN_ENEMY_DAMAGE_MULTIPLIER             = 0.15  -- Multiplier applied to fountain damage against enemy player-controlled units.
 MAXIMUM_ATTACK_SPEED                         = 700   -- What should we use for the maximum attack speed?
 MINIMUM_ATTACK_SPEED                         = 10    -- What should we use for the minimum attack speed?
 

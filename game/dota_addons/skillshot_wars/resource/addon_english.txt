@@ -38,7 +38,10 @@
         "DOTA_Tooltip_ability_item_citrulline_malate_Description"    "Instantly restores %heal_amount% health and gives %bonus_strength% bonus strength and %bonus_spell_amp%%% spell amplification for %duration% seconds."
 
         "DOTA_Tooltip_modifier_citrulline"                           "Citrulline Malate"
-        "DOTA_Tooltip_modifier_citrulline_description"               "Strength increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%. <br> Spell amplification increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%%%."
+        "DOTA_Tooltip_modifier_citrulline_Description"               "Strength increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%. <br> Spell amplification increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%%%."
+
+        "DOTA_Tooltip_modifier_reduced_fountain_healing"             "Reduced Fountain Healing"
+        "DOTA_Tooltip_modifier_reduced_fountain_healing_Description" "Fountain health regeneration is reduced for a short time after taking damage."
 
         "DOTA_Tooltip_ability_item_scout_bot"                        "Scout Bot"
         "DOTA_Tooltip_ability_item_scout_bot_Description"            "<h1>Active: Deploy</h1>Deploys a scout bot in a given direction that flies to a distance of %distance%. <br><br> The scout bot gives vision in %vision_radius% radius."

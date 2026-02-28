@@ -1,3 +1,6 @@
+local FOUNTAIN_AURA_MODIFIER_NAME = "modifier_fountain_aura_buff"
+local REDUCED_FOUNTAIN_HEALING_MODIFIER_NAME = "modifier_reduced_fountain_healing"
+
 -- Order Filter; order can be casting an ability, moving, clicking to attack, using scan (radar), glyph etc.
 function barebones:OrderFilter(filter_table)
     --PrintTable(filter_table)
@@ -135,6 +138,12 @@ function barebones:DamageFilter(keys)
         damage_after_reductions = keys.damage
     end
 
+    if damage_after_reductions > 0 and victim:IsRealHero() then
+        victim:AddNewModifier(attacker, damaging_ability, REDUCED_FOUNTAIN_HEALING_MODIFIER_NAME, {
+            duration = FOUNTAIN_RECENT_DAMAGE_WINDOW,
+        })
+    end
+
     -- Update the gold bounty of the hero before he dies
     if USE_CUSTOM_HERO_GOLD_BOUNTY then
         if attacker:IsControllableByAnyPlayer() and victim:IsRealHero() and damage_after_reductions >= victim:GetHealth() then
@@ -254,6 +263,17 @@ function barebones:HealingFilter(keys)
         healing_ability = EntIndexToHScript(healing_ability_index)
     end
     -- If healing_ability is nil then the 'source' of the heal is unit's hp regen
+
+    if healing_target
+            and not healing_target:IsNull()
+            and healing_target:IsRealHero()
+            and not healing_ability
+            and healing_target:HasModifier(FOUNTAIN_AURA_MODIFIER_NAME)
+            and healing_target:HasModifier(REDUCED_FOUNTAIN_HEALING_MODIFIER_NAME)
+            and FOUNTAIN_PERCENTAGE_HEALTH_REGEN > 0
+            and FOUNTAIN_PERCENTAGE_HEALTH_REGEN_DAMAGED >= 0 then
+        keys.heal = heal_amount * (FOUNTAIN_PERCENTAGE_HEALTH_REGEN_DAMAGED / FOUNTAIN_PERCENTAGE_HEALTH_REGEN)
+    end
 
     return true
 end

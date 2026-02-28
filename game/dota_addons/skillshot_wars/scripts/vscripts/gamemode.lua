@@ -234,6 +234,7 @@ function barebones:InitGameMode()
     -- Global Lua Modifiers
     LinkLuaModifier("modifier_custom_invulnerable", "modifiers/modifier_custom_invulnerable.lua", LUA_MODIFIER_MOTION_NONE)
     LinkLuaModifier("modifier_custom_passive_gold", "modifiers/modifier_custom_passive_gold.lua", LUA_MODIFIER_MOTION_NONE)
+    LinkLuaModifier("modifier_reduced_fountain_healing", "modifiers/modifier_reduced_fountain_healing.lua", LUA_MODIFIER_MOTION_NONE)
 
     -- Increase/decrease maximum item limit per hero
     Convars:SetInt('dota_max_physical_items_purchase_limit', 64)
