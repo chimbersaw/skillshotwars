@@ -66,7 +66,7 @@
         "item"      "item_glimmer_cape_dummy"
         "item"      "item_gem_of_vengeance"
         "item"      "item_blink"
-        "item"      "item_travel_boots_2_dummy"
+        "item"      "item_travel_boots_2"
         "item"      "item_kaya_dummy"
         "item"      "item_bloodstone_dummy"
         "item"      "item_octarine_core_dummy"

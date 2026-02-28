@@ -340,61 +340,6 @@
         }
     }
 
-    "item_travel_boots_2_dummy"
-    {
-        "BaseClass"                     "item_datadriven"
-        "AbilityTextureName"            "item_travel_boots_2_dummy"
-        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
-        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
-        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
-        "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
-        "Model"                         "models/props_gameplay/red_box.vmdl"
-        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
-        "ItemQuality"                   "artifact"
-        "ItemKillable"                  "0"
-        "ItemPurchasable"               "1"
-        "ItemDroppable"                 "1"
-        "ItemSellable"                  "1"
-        "ItemCost"                      "1500"
-        "SecretShop"                    "1"
-        "Modifiers"
-        {
-            "fixitem"
-            {
-                "IsHidden"    "1"
-                "Passive"    "1"
-                "OnCreated"
-                {
-                    "DelayedAction"
-                    {
-                        "Delay"        "0.1"
-                        "Action"
-                        {
-                            "RunScript"
-                            {
-                                "ScriptFile"        "items/item_dummy.lua"
-                                "Function"          "FixItem"
-                                "RealItem"          "item_travel_boots_2"
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        // Necessary for item description
-        "AbilityValues"
-        {
-          "bonus_movement_speed"      "80"
-          "maximum_distance"          "800"
-          "vision_radius"             "200"
-          "tp_cooldown"               "40"
-          "tp_channel_time"           "2"
-        }
-    }
-
     "item_refresher_dummy"
     {
         "BaseClass"                     "item_datadriven"
@@ -639,7 +584,7 @@
     {
         "SecretShop"                    "1"
         "ItemSellable"                  "1"
-        "ItemCost"                      "750"
+        "ItemCost"                      "500"
 
         "AbilityValues"
         {
@@ -750,6 +695,32 @@
         }
     }
 
+	//=================================================================================================================
+	// Recipe: Travel Boots
+	//=================================================================================================================
+	"item_recipe_travel_boots_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"Model"							"models/props_gameplay/recipe.vmdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemSellable"                  "1"
+		"ItemCost"						"1000"
+		"ItemShopTags"					""
+		"SecretShop"                    "1"
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_travel_boots_2"
+		"ItemRequirements"
+		{
+		  "01"						    "item_boots*"
+		}
+	}
+
     //=================================================================================================================
     // Travel Boots 2
     //=================================================================================================================
@@ -764,6 +735,8 @@
 
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
+        "ItemPurchasable"               "1"
+        "ItemSellable"                  "1"
         "ItemCost"                      "1500"
         "ItemShopTags"                  "teleport;move_speed"
         "ItemQuality"                   "common"
@@ -772,6 +745,8 @@
         "MaxUpgradeLevel"               "2"
         "ItemBaseLevel"                 "2"
         "ShouldBeSuggested"             "1"
+
+        "SecretShop"                    "1"
 
         // Special
         //-------------------------------------------------------------------------------------------------------------
@@ -1128,7 +1103,6 @@
     "item_recipe_moon_shard"        "REMOVE"
     "item_moon_shard"               "REMOVE"
     "item_enchanted_mango"          "REMOVE"
-    "item_recipe_travel_boots_2"    "REMOVE"
     "item_recipe_lotus_orb"         "REMOVE"
     "item_lotus_orb"                "REMOVE"
     "item_recipe_crimson_guard"     "REMOVE"

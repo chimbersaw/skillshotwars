@@ -68,6 +68,9 @@
         "DOTA_Tooltip_ability_item_manta_bonus_attack_speed"                  ""
         "DOTA_Tooltip_ability_item_manta_images_count"                        "КОЛИЧЕСТВО ИЛЛЮЗИЙ:"
 
+        "DOTA_Tooltip_ability_item_boots_Lore"                                ""
+
+        "DOTA_Tooltip_ability_item_travel_boots_2_Lore"                       ""
         "DOTA_Tooltip_ability_item_travel_boots_2_dummy"                      "Boots of Travel"
         "DOTA_Tooltip_ability_item_travel_boots_2_dummy_Description"          "<h1>Улучшение Town Portal Scroll</h1>Улучшает свиток телепортации: он позволяет телепортироваться к существам и героям, перезаряжается и применяется быстрее и не расходует заряды.\nОсновные бонусы к скорости передвижения от нескольких пар ботинок не складываются."
         "DOTA_Tooltip_ability_item_travel_boots_2_dummy_bonus_movement_speed" "+$move_speed"
