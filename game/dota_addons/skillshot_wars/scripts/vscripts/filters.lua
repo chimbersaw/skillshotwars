@@ -111,7 +111,7 @@ function barebones:DamageFilter(keys)
     end
 
     local damage_type = keys.damagetype_const
-    local inflictor = keys.entindex_inflictor_const    -- keys.entindex_inflictor_const is nil if damage is not caused by an ability
+    local inflictor = keys.entindex_inflictor_const -- keys.entindex_inflictor_const is nil if damage is not caused by an ability
     local damage_after_reductions = keys.damage     -- keys.damage is damage after reductions without spell amplifications
 
     -- Damage types:
@@ -146,7 +146,7 @@ function barebones:DamageFilter(keys)
 
     -- Update the gold bounty of the hero before he dies
     if USE_CUSTOM_HERO_GOLD_BOUNTY then
-        if attacker:IsControllableByAnyPlayer() and victim:IsRealHero() and damage_after_reductions >= victim:GetHealth() then
+        if attacker:IsControllableByAnyPlayer() and victim:IsRealHero() and not victim:IsSpiritBearCustom() and not victim:IsTempestDouble() and not victim:IsClone() and damage_after_reductions >= victim:GetHealth() then
             -- Get his killing streak
             local hero_streak = victim:GetStreak()
             -- Get his level

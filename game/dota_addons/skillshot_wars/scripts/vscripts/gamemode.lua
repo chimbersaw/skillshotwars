@@ -107,6 +107,23 @@ function barebones:InitGameMode()
     GameRules:SetHideKillMessageHeaders(HIDE_KILL_BANNERS)
     GameRules:LockCustomGameSetupTeamAssignment(LOCK_TEAMS)
 
+    -- TO TEST:
+    --GameRules:SetAllowOutpostBonuses(true)
+    --GameRules:SetEnableAlternateHeroGrids(false) -- disable alternate hero grids to be used (DOTA+, etc) useful when you have custom heroes
+    --GameRules:SetSuggestItemsEnabled(false)
+    -- HERO BLACK LIST
+    --GameRules:SetHideBlacklistedHeroes(true) -- true is hidden, false is dimmed during hero selection
+    --GameRules:AddHeroIDToBlacklist(int)
+    --GameRules:AddHeroToBlacklist(string)
+    --GameRules:ClearHeroBlacklist()
+    --GameRules:RemoveHeroFromBlacklist(string)
+    --GameRules:RemoveHeroIDFromBlacklist(int)
+    -- ITEM WHITE LIST
+    --GameRules:SetWhiteListEnabled(true)
+    --GameRules:AddItemToWhiteList(string)
+    --GameRules:IsItemInWhiteList(string)
+    --GameRules:RemoveItemFromWhiteList(string)
+
     -- This is multi-team configuration stuff
     if USE_AUTOMATIC_PLAYERS_PER_TEAM then
         local num = math.floor(10 / MAX_NUMBER_OF_TEAMS)
@@ -262,6 +279,8 @@ function barebones:CaptureGameMode()
     if USE_CUSTOM_XP_VALUES then
         gamemode:SetUseCustomHeroLevels(true)
         gamemode:SetCustomXPRequiredToReachNextLevel(XP_PER_LEVEL_TABLE)
+    elseif MAX_LEVEL ~= 30 then
+        gamemode:SetCustomHeroMaxLevel(MAX_LEVEL) -- this is not needed if SetCustomXPRequiredToReachNextLevel is used
     end
 
     gamemode:SetBotThinkingEnabled(USE_STANDARD_DOTA_BOT_THINKING)
@@ -317,4 +336,17 @@ function barebones:CaptureGameMode()
     gamemode:DisableHudFlip(FORCE_MINIMAP_ON_THE_LEFT)
 
     gamemode:SetFreeCourierModeEnabled(false) -- this disables couriers AS WELL AS vanilla passive GPM, Thanks Valve :)
+    --gamemode:SetUseTurboCouriers(true)
+    --gamemode:SetGiveFreeTPOnDeath(false) -- disables free tp scroll on death
+    --gamemode:SetTPScrollSlotItemOverride(itemname) -- replace tp scroll slot with something else
+    --gamemode:SetSelectionGoldPenaltyEnabled(false) -- disables hero selection penalty
+
+    -- TO TEST:
+    --gamemode:SetAllowNeutralItemDrops(false) -- disables neutral items from dropping?
+    --gamemode:SetCanSellAnywhere(true) -- global shop?
+    --gamemode:SetFriendlyBuildingMoveToEnabled(true) -- maybe enables rightclicking friendly buildings without meepmeep invulnerable warning
+    --gamemode:SetKillableTombstones(true) -- drops tombstone on death or useless?
+    --gamemode:SetNeutralItemHideUndiscoveredEnabled(true) -- undiscovered items in the neutral item stash are hidden.
+    --gamemode:SetNeutralStashTeamViewOnlyEnabled(true) -- the all neutral items tab cannot be viewed? you can't see all neutrals but only found?
+    --gamemode:SetRandomHeroBonusItemGrantDisabled(false) -- enables faerie fire and mango maybe when randoming
 end
