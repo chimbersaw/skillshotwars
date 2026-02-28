@@ -78,9 +78,7 @@ function barebones:OnGameRulesStateChange(keys)
 
     elseif new_state == DOTA_GAMERULES_STATE_PRE_GAME then
         DebugPrint("[BAREBONES] Game State changed to: DOTA_GAMERULES_STATE_PRE_GAME")
-        local gamemode = GameRules:GetGameModeEntity()
-        gamemode:SetCustomDireScore(0)
-        gamemode:SetCustomRadiantScore(0)
+        self:OnPreGame()
 
     elseif new_state == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
         DebugPrint("[BAREBONES] Game State changed to: DOTA_GAMERULES_STATE_GAME_IN_PROGRESS")
@@ -419,7 +417,6 @@ function barebones:OnRuneActivated(keys)
     local rune = keys.rune
 
     -- For Bounty Runes use BountyRuneFilter
-    -- For modifying which runes spawn use RuneSpawnFilter (if it works)
     -- This event can be used for adding more effects to existing runes.
 end
 

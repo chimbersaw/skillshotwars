@@ -14,9 +14,8 @@ require('events')
 -- filters.lua
 require('filters')
 
-if USE_CUSTOM_ROSHAN then
-    require('components/roshan/init')
-end
+-- load components
+require('components/index')
 
 --[[
   This function should be used to set up Async precache calls at the beginning of the gameplay.
@@ -50,6 +49,15 @@ function barebones:OnAllPlayersLoaded()
     DebugPrint("[BAREBONES] All Players have loaded into the game.")
 end
 
+function barebones:OnPreGame()
+    local gamemode = GameRules:GetGameModeEntity()
+    gamemode:SetCustomDireScore(0)
+    gamemode:SetCustomRadiantScore(0)
+
+    DebugPrint("[BAREBONES] Loading module CustomRuneSystem")
+    InitModule(CustomRuneSystem)
+end
+
 --[[
   This function is called once and only once when the game completely begins (about 0:00 on the clock).  At this point,
   gold will begin to go up in ticks if configured, creeps will spawn, towers will become damageable etc.  This function
@@ -60,6 +68,28 @@ function barebones:OnGameInProgress()
 
     -- If the day/night is not changed at 00:00, the following line is needed:
     GameRules:SetTimeOfDay(0.251)
+end
+
+function InitModule(myModule)
+    if myModule ~= nil then
+        if myModule.initialized == true then
+            print("Module " .. tostring(myModule.moduleName) .. " is already initialized and there was an attempt to initialize it again -> preventing")
+            return
+        end
+        local status, err = pcall(function()
+            --luacheck: ignore status
+            myModule:Init()
+            myModule.initialized = true
+        end)
+        if err then
+            if debug then
+                local info = debug.getinfo(2, "Sl")
+                print("Script Runtime Error: " .. info.source:sub(2) .. ":" .. info.currentline .. ": " .. err)
+                print(debug.traceback())
+            end
+            print('Failed to init module!!!')
+        end
+    end
 end
 
 -- This function initializes the game mode and is called before anyone loads into the game
@@ -313,12 +343,13 @@ function barebones:CaptureGameMode()
     if USE_DEFAULT_RUNE_SYSTEM then
         gamemode:SetUseDefaultDOTARuneSpawnLogic(true)
     else
-        -- Some runes are broken by Valve, RuneSpawnFilter also didn't work last time I tried
-        for rune, spawn in pairs(ENABLED_RUNES) do
-            gamemode:SetRuneEnabled(rune, spawn)
-        end
-        gamemode:SetBountyRuneSpawnInterval(BOUNTY_RUNE_SPAWN_INTERVAL)
-        gamemode:SetPowerRuneSpawnInterval(POWER_RUNE_SPAWN_INTERVAL)
+        -- RuneSpawnFilter is broken
+        --for rune, spawn in pairs(ENABLED_RUNES) do
+        --    gamemode:SetRuneEnabled(rune, spawn) -- this doesn't work for Arcane runes
+        --end
+        --gamemode:SetBountyRuneSpawnInterval(BOUNTY_RUNE_SPAWN_INTERVAL)
+        --gamemode:SetPowerRuneSpawnInterval(POWER_RUNE_SPAWN_INTERVAL)
+        --GameRules:SetRuneSpawnTime(x) -- does literally nothing no matter what x number is
     end
 
     gamemode:SetUnseenFogOfWarEnabled(USE_UNSEEN_FOG_OF_WAR)

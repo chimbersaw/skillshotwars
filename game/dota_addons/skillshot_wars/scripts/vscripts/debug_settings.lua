@@ -140,20 +140,23 @@ ENABLE_PAUSING                               = true  -- Should we allow players 
 FORCE_MINIMAP_ON_THE_LEFT                    = false -- Should we disable hud flip aka force the default dota hud positions?
 -- Note: Some players have minimap on the right and gold/shop on the left.
 
+-- Runes
 USE_DEFAULT_RUNE_SYSTEM                      = false -- Should we use the default dota rune spawn timings and the same runes as dota have?
-BOUNTY_RUNE_SPAWN_INTERVAL                   = 60    -- How long in seconds should we wait between bounty rune spawns? BUGGED! WORKS FOR POWERUPS TOO!
-POWER_RUNE_SPAWN_INTERVAL                    = 3600  -- How long in seconds should we wait between power-up runes spawns? BUGGED! WORKS FOR BOUNTIES TOO!
--- Note: If you swap previous two values, the rune doesn't spawn on 01:00
+--BOUNTY_RUNE_SPAWN_INTERVAL                 = 60    -- How long in seconds should we wait between bounty rune spawns? BUGGED! WORKS FOR POWERUPS TOO!
+-- Power-up Runes
+FIRST_POWER_RUNE_SPAWN_TIME = 0                      -- After what delay in seconds will the first power-up rune spawn?
+POWER_RUNE_SPAWN_INTERVAL = 60                       -- How long in seconds should we wait between power-up runes respawns?
 
-ENABLED_RUNES                                = {}    -- Which power-up runes should be enabled to spawn in our game mode?
-ENABLED_RUNES[DOTA_RUNE_DOUBLEDAMAGE]        = true
-ENABLED_RUNES[DOTA_RUNE_HASTE]               = true
-ENABLED_RUNES[DOTA_RUNE_ILLUSION]            = true
-ENABLED_RUNES[DOTA_RUNE_INVISIBILITY]        = true
-ENABLED_RUNES[DOTA_RUNE_REGENERATION]        = true
-ENABLED_RUNES[DOTA_RUNE_SHIELD]              = false
-ENABLED_RUNES[DOTA_RUNE_ARCANE]              = false            -- BUGGED! NEVER SPAWNS!
-ENABLED_RUNES[DOTA_RUNE_BOUNTY]              = false            -- BUGGED! NEVER SPAWNS!
+-- Doesn't work
+--ENABLED_RUNES                                = {}    -- Which power-up runes should be enabled to spawn in our game mode?
+--ENABLED_RUNES[DOTA_RUNE_DOUBLEDAMAGE]        = true
+--ENABLED_RUNES[DOTA_RUNE_HASTE]               = true
+--ENABLED_RUNES[DOTA_RUNE_ILLUSION]            = true
+--ENABLED_RUNES[DOTA_RUNE_INVISIBILITY]        = true
+--ENABLED_RUNES[DOTA_RUNE_REGENERATION]        = true
+--ENABLED_RUNES[DOTA_RUNE_SHIELD]              = false
+--ENABLED_RUNES[DOTA_RUNE_ARCANE]              = true             -- BUGGED! NEVER SPAWNS!
+--ENABLED_RUNES[DOTA_RUNE_BOUNTY]              = false            -- BUGGED! NEVER SPAWNS!
 
 MAX_NUMBER_OF_TEAMS                          = 2                -- How many potential teams can be in this game mode?
 USE_CUSTOM_TEAM_COLORS                       = false            -- Should we use custom team colors?
@@ -184,6 +187,3 @@ CUSTOM_TEAM_PLAYER_COUNT[DOTA_TEAM_CUSTOM_5] = 0
 CUSTOM_TEAM_PLAYER_COUNT[DOTA_TEAM_CUSTOM_6] = 0
 CUSTOM_TEAM_PLAYER_COUNT[DOTA_TEAM_CUSTOM_7] = 0
 CUSTOM_TEAM_PLAYER_COUNT[DOTA_TEAM_CUSTOM_8] = 0
-
-USE_CUSTOM_ROSHAN                            = false -- Should we use a custom roshan?
-USE_CUSTOM_TORMENTOR                         = false -- Should we use a custom tormentor?
