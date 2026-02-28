@@ -72,13 +72,7 @@
         "DOTA_Tooltip_ability_item_manta_images_count"                        "КОЛИЧЕСТВО ИЛЛЮЗИЙ:"
 
         "DOTA_Tooltip_ability_item_boots_Lore"                                ""
-
         "DOTA_Tooltip_ability_item_travel_boots_2_Lore"                       ""
-        "DOTA_Tooltip_ability_item_travel_boots_2_dummy"                      "Boots of Travel"
-        "DOTA_Tooltip_ability_item_travel_boots_2_dummy_Description"          "<h1>Улучшение Town Portal Scroll</h1>Улучшает свиток телепортации: он позволяет телепортироваться к существам и героям, перезаряжается и применяется быстрее и не расходует заряды.\nОсновные бонусы к скорости передвижения от нескольких пар ботинок не складываются."
-        "DOTA_Tooltip_ability_item_travel_boots_2_dummy_bonus_movement_speed" "+$move_speed"
-        "DOTA_Tooltip_ability_item_travel_boots_2_dummy_tp_cooldown"          "ПЕРЕЗАРЯДКА ТЕЛЕПОРТАЦИИ:"
-        "DOTA_Tooltip_ability_item_travel_boots_2_dummy_tp_channel_time"      "ВРЕМЯ ТЕЛЕПОРТАЦИИ:"
 
         "DOTA_Tooltip_ability_item_refresher_dummy"                           "Refresher Orb"
         "DOTA_Tooltip_ability_item_refresher_dummy_Description"               "<h1>Активное: Reset</h1> Сбрасывает перезарядку всех предметов и способностей. Имеет общую перезарядку с предметом Refresher Shard. Перезарядка этого предмета происходит, только когда он находится в основном инвентаре героя."

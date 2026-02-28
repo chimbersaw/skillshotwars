@@ -72,13 +72,7 @@
         "DOTA_Tooltip_ability_item_manta_images_count"                        "NUMBER OF IMAGES:"
 
         "DOTA_Tooltip_ability_item_boots_Lore"                                ""
-
         "DOTA_Tooltip_ability_item_travel_boots_2_Lore"                       ""
-        "DOTA_Tooltip_ability_item_travel_boots_2_dummy"                      "Boots of Travel"
-        "DOTA_Tooltip_ability_item_travel_boots_2_dummy_Description"          "<h1>Upgrade: Town Portal Scroll</h1>Upgrades your Town Portal Scroll, allowing it to target units and heroes, reduces cooldown, channel time and does not consume a charge on usage. \nMovement speed bonuses from multiple pairs of boots do not stack."
-        "DOTA_Tooltip_ability_item_travel_boots_2_dummy_bonus_movement_speed" "+$move_speed"
-        "DOTA_Tooltip_ability_item_travel_boots_2_dummy_tp_cooldown"          "TOWN PORTAL SCROLL COOLDOWN:"
-        "DOTA_Tooltip_ability_item_travel_boots_2_dummy_tp_channel_time"      "TOWN PORTAL SCROLL CHANNEL TIME:"
 
         "DOTA_Tooltip_ability_item_refresher_dummy"                           "Refresher Orb"
         "DOTA_Tooltip_ability_item_refresher_dummy_Description"               "<h1>Active: Reset Cooldowns</h1>Resets the cooldowns of all your items and abilities. Shares a cooldown with Refresher Shard. This item's cooldown only progresses in your hero's main inventory."
