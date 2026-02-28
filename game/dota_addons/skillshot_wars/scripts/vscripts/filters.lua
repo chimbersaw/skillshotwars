@@ -130,6 +130,11 @@ function barebones:DamageFilter(keys)
         return false
     end
 
+    if attacker:IsFountain() then
+        keys.damage = damage_after_reductions * FOUNTAIN_ENEMY_DAMAGE_MULTIPLIER
+        damage_after_reductions = keys.damage
+    end
+
     -- Update the gold bounty of the hero before he dies
     if USE_CUSTOM_HERO_GOLD_BOUNTY then
         if attacker:IsControllableByAnyPlayer() and victim:IsRealHero() and damage_after_reductions >= victim:GetHealth() then

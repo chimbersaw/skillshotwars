@@ -19,7 +19,7 @@ TREE_REGROW_TIME = 60.0            -- How long should it take individual trees t
 
 --GOLD_PER_TICK = 2                -- How much gold should players get per tick? SetGoldTickTime DOESN'T WORK
 --GOLD_TICK_TIME = 5.0             -- How long should we wait in seconds between gold ticks? SetGoldPerTick DOESN'T WORK
-ADDITIONAL_GPM = 24                -- Uncomment this if you want additional gold per minute beside default
+ADDITIONAL_GPM = 72                -- Uncomment this if you want additional gold per minute beside default
 
 NORMAL_START_GOLD = 999999               -- Starting Gold
 
@@ -126,6 +126,7 @@ end
 FOUNTAIN_CONSTANT_MANA_REGEN                 = -1    -- What should we use for the constant fountain mana regen?  Use -1 to keep the default dota behavior.
 FOUNTAIN_PERCENTAGE_MANA_REGEN               = -1    -- What should we use for the percentage fountain mana regen?  Use -1 to keep the default dota behavior.
 FOUNTAIN_PERCENTAGE_HEALTH_REGEN             = 10    -- What should we use for the percentage fountain health regen?  Use -1 to keep the default dota behavior.
+FOUNTAIN_ENEMY_DAMAGE_MULTIPLIER             = 0.15   -- Multiplier applied to fountain damage against enemy player-controlled units.
 MAXIMUM_ATTACK_SPEED                         = 700   -- What should we use for the maximum attack speed?
 MINIMUM_ATTACK_SPEED                         = 10    -- What should we use for the minimum attack speed?
 
