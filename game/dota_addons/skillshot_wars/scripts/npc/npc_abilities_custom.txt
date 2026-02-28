@@ -27,9 +27,7 @@
         "AbilityBehavior"         "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
         "AbilityUnitDamageType"   "DAMAGE_TYPE_PURE"
         "SpellImmunityType"       "SPELL_IMMUNITY_ENEMIES_YES"
-        "FightRecapLevel"         "1"
         "MaxLevel"                "1"
-        "AbilitySound"            "Hero_Pudge.AttackHookExtend"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -74,9 +72,7 @@
         "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "SpellDispellableType"          "SPELL_DISPELLABLE_YES_STRONG"
-        "FightRecapLevel"               "1"
         "MaxLevel"                      "1"
-        "AbilitySound"                  "Hero_Mirana.ArrowCast"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -131,8 +127,6 @@
         "HotKeyOverride"               "T"
         "AbilityUnitDamageType"        "DAMAGE_TYPE_PURE"
         "SpellImmunityType"            "SPELL_IMMUNITY_ENEMIES_YES"
-        "FightRecapLevel"              "1"
-        "AbilitySound"                 "Hero_Invoker.SunStrike.Charge"
 
         // Stats
         //-------------------------------------------------------------------------------------------------------------
@@ -169,7 +163,6 @@
         "SpellImmunityType"              "SPELL_IMMUNITY_ENEMIES_YES"
         "SpellDispellableType"           "SPELL_DISPELLABLE_YES_STRONG"
         "MaxLevel"                       "1"
-        "AbilitySound"                   "Hero_Rattletrap.Hookshot.Fire"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------

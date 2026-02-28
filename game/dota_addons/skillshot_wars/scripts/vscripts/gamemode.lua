@@ -1,5 +1,5 @@
 -- This is the primary barebones gamemode script and should be used to assist in initializing your game mode
-BAREBONES_VERSION = "2.0.18"
+BAREBONES_VERSION = "2.1.1"
 
 -- Selection library (by Noya) provides player selection inspection and management from server lua
 require('libraries/selection')
@@ -16,10 +16,6 @@ require('filters')
 
 if USE_CUSTOM_ROSHAN then
     require('components/roshan/init')
-end
-
-if USE_CUSTOM_TORMENTOR then
-    require('components/tormentor/init')
 end
 
 --[[
@@ -186,7 +182,6 @@ function barebones:InitGameMode()
     ListenToGameEvent("dota_illusions_created", Dynamic_Wrap(barebones, 'OnIllusionsCreated'), self) -- old
     ListenToGameEvent("dota_item_combined", Dynamic_Wrap(barebones, 'OnItemCombined'), self) -- old
     ListenToGameEvent("dota_player_begin_cast", Dynamic_Wrap(barebones, 'OnAbilityCastBegins'), self) -- old
-    ListenToGameEvent("dota_tower_kill", Dynamic_Wrap(barebones, 'OnTowerKill'), self)
     ListenToGameEvent("dota_player_selected_custom_team", Dynamic_Wrap(barebones, 'OnPlayerSelectedCustomTeam'), self)
     ListenToGameEvent("dota_npc_goal_reached", Dynamic_Wrap(barebones, 'OnNPCGoalReached'), self)
 

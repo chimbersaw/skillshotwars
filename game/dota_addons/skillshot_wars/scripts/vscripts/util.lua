@@ -100,6 +100,10 @@ COLOR_LRED = '\x1C'
 COLOR_GOLD = '\x1D'
 
 function DebugAllCalls()
+    if not debug then
+        print("debug not available!")
+        return
+    end
     if not GameRules.DebugCalls then
         print("Starting DebugCalls")
         GameRules.DebugCalls = true
@@ -160,11 +164,7 @@ end
 
 -- This function checks if a given unit is Roshan, returns boolean value;
 function CDOTA_BaseNPC:IsRoshanCustom()
-    if self:IsAncient() and self:GetUnitName() == "npc_dota_roshan" then
-        return true
-    end
-
-    return false
+    return string.find(self:GetUnitName(), "npc_dota_roshan")
 end
 
 -- This function checks if this entity is a fountain or not; returns boolean value;
@@ -176,13 +176,14 @@ function CBaseEntity:IsFountain()
     return false
 end
 
+-- This function checks if a given unit is Lone Druid's Spirit Bear, returns boolean value;
 function CDOTA_BaseNPC:IsSpiritBearCustom()
     return string.find(self:GetUnitName(), "npc_dota_lone_druid_bear")
 end
 
 function IsMonkeyKingCloneCustom(entity)
     if entity.HasModifier == nil then
-        return true
+        return false
     end
 
     local monkey_king_soldier_modifiers = {

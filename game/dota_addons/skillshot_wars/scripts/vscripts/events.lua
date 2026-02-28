@@ -724,16 +724,6 @@ function barebones:OnAbilityCastBegins(keys)
     local abilityName = keys.abilityname
 end
 
--- This function is called whenever a tower is destroyed
-function barebones:OnTowerKill(keys)
-    DebugPrint("[BAREBONES] OnTowerKill event")
-    --PrintTable(keys)
-
-    local gold = keys.gold
-    local killer_userID = keys.killer_userid
-    local team = keys.teamnumber
-end
-
 -- This function is called whenever a player changes their custom team selection during Custom Game Setup
 function barebones:OnPlayerSelectedCustomTeam(keys)
     DebugPrint("[BAREBONES] OnPlayerSelectedCustomTeam event")
