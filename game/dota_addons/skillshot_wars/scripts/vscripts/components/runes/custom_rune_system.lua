@@ -25,7 +25,9 @@ function CustomRuneSystem:Init()
     end
 
     DebugPrint("[BAREBONES] Powerup rune locations:")
-    PrintTable(self.powerup_rune_locations)
+    if USE_DEBUG then
+        PrintTable(self.powerup_rune_locations)
+    end
 
     Timers:CreateTimer(PRE_GAME_TIME + FIRST_POWER_RUNE_SPAWN_TIME, function()
         CustomRuneSystem:SpawnRunes("powerup")
@@ -41,6 +43,8 @@ function CustomRuneSystem:Init()
         --DOTA_RUNE_SHIELD,
         --DOTA_RUNE_WATER,
     }
+
+    self:ResetPowerRuneCycle()
 
     ---- Bounty Runes
     --local bounty_rune_spawners = Entities:FindAllByClassname("dota_item_rune_spawner_bounty") -- vanilla bounty rune spawners
@@ -65,6 +69,32 @@ function CustomRuneSystem:Init()
     --end
 end
 
+function CustomRuneSystem:ResetPowerRuneCycle()
+    self.power_rune_cycle = {}
+
+    for i = 1, #self.power_runes_enums do
+        self.power_rune_cycle[i] = self.power_runes_enums[i]
+    end
+
+    for i = #self.power_rune_cycle, 2, -1 do
+        local j = RandomInt(1, i)
+        self.power_rune_cycle[i], self.power_rune_cycle[j] = self.power_rune_cycle[j], self.power_rune_cycle[i]
+    end
+
+    self.power_rune_cycle_index = 1
+end
+
+function CustomRuneSystem:GetNextPowerRune()
+    if not self.power_rune_cycle or self.power_rune_cycle_index > #self.power_rune_cycle then
+        self:ResetPowerRuneCycle()
+    end
+
+    local rune_to_spawn = self.power_rune_cycle[self.power_rune_cycle_index]
+    self.power_rune_cycle_index = self.power_rune_cycle_index + 1
+
+    return rune_to_spawn
+end
+
 function CustomRuneSystem:SpawnRunes(rune_type)
     local rune_locations = {}
     local spawn_interval = 60
@@ -79,7 +109,7 @@ function CustomRuneSystem:SpawnRunes(rune_type)
         return
     end
 
-    if rune_locations == nil or rune_locations == {} then
+    if rune_locations == nil or #rune_locations == 0 then
         DebugPrint("CustomRuneSystem: Invalid rune locations.")
         return
     end
@@ -95,8 +125,7 @@ function CustomRuneSystem:SpawnRunes(rune_type)
             if rune_type == "bounty" then
                 CreateRune(rune_locations[i], DOTA_RUNE_BOUNTY)
             else
-                local random_int = RandomInt(1, #CustomRuneSystem.power_runes_enums)
-                local rune_to_spawn = CustomRuneSystem.power_runes_enums[random_int]
+                local rune_to_spawn = self:GetNextPowerRune()
                 DebugPrint("Spawning rune " .. tostring(rune_to_spawn) .. " in: " .. tostring(rune_locations[i]))
                 CreateRune(rune_locations[i], rune_to_spawn)
             end
