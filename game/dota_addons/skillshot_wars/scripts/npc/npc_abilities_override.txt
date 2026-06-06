@@ -299,6 +299,22 @@
     "item_phylactery"               "REMOVE"
     "item_orb_of_frost"             "REMOVE"
 
+    // 7.41
+    "item_chasm_stone"              "REMOVE"
+    "item_shawl"                    "REMOVE"
+    "item_splintmail"               "REMOVE"
+    "item_wizard_hat"               "REMOVE"
+    "item_recipe_consecrated_wraps" "REMOVE"
+    "item_consecrated_wraps"        "REMOVE"
+    "item_recipe_crellas_crozier"   "REMOVE"
+    "item_crellas_crozier"          "REMOVE"
+    "item_recipe_essence_distiller" "REMOVE"
+    "item_essence_distiller"        "REMOVE"
+    "item_recipe_specialists_array" "REMOVE"
+    "item_specialists_array"        "REMOVE"
+    "item_recipe_hydras_breath"     "REMOVE"
+    "item_hydras_breath"            "REMOVE"
+
     // Neutral items - DO NOT REMOVE NEUTRAL ITEMS, IT CAN CAUSE CRASHES, YOU CAN DISABLE THEM in neutral_items.txt?
     //"item_ancient_guardian"         "REMOVE"
     //"item_ancient_perseverance"     "REMOVE" // unreleased
@@ -409,7 +425,6 @@
     //"item_seer_stone"               "REMOVE"
     //"item_slime_vial"               "REMOVE" // unreleased
     //"item_spark_of_courage"         "REMOVE"
-    //"item_specialists_array"        "REMOVE"
     //"item_spell_prism"              "REMOVE" // disabled
     //"item_spider_legs"              "REMOVE" // disabled
     //"item_spy_gadget"               "REMOVE"
