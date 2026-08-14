@@ -1,0 +1,75 @@
+"dota_shops"
+{
+    "consumables"
+    {
+        "item"      "item_tpscroll"
+        "item"      "item_ward_observer"
+        "item"      "item_ward_sentry"
+        "item"      "item_smoke_of_deceit"
+        "item"      "item_flask"
+        "item"      "item_citrulline_malate"
+    }
+
+    "attributes"
+    {
+    }
+
+    "weapons_armor"
+    {
+    }
+
+    "misc"
+    {
+    }
+
+    // Level 1 - Green Recipes
+    "basics"
+    {
+    }
+
+    // Level 2 - Blue Recipes
+    "support"
+    {
+    }
+
+    "magics"
+    {
+    }
+
+    // Level 3 - Purple Recipes
+    "defense"
+    {
+    }
+
+    "weapons"
+    {
+    }
+
+    // Level 4 - Orange / Orb / Artifacts
+    "artifacts"
+    {
+    }
+
+    "sideshop1"
+    {
+    }
+
+    "sideshop2"
+    {
+    }
+
+    "secretshop"
+    {
+        "item"      "item_boots"
+        "item"      "item_manta_dummy"
+        "item"      "item_scout_bot"
+        "item"      "item_glimmer_cape_dummy"
+        "item"      "item_gem_of_vengeance"
+        "item"      "item_blink"
+        "item"      "item_travel_boots_2"
+        "item"      "item_kaya_dummy"
+        "item"      "item_bloodstone_dummy"
+        "item"      "item_octarine_core_dummy"
+        "item"      "item_refresher_dummy"
+    }
+}
