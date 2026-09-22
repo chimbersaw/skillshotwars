@@ -14,6 +14,17 @@ function HidePickScreen() {
 (function()
 {
     GameEvents.Subscribe( "game_rules_state_change", HidePickScreen );
+
+    // Dota can retain shop rows built before the addon's item definitions load.
+    // Let the native shop rebuild them from the current shop KV (Valve issue #34007).
+    // Also used by Open Angel Arena: OpenAngelArena/oaa#3900.
+    const dotaHud = $.GetContextPanel().GetParent().GetParent();
+    ["GridBasicItems", "GridUpgradeItems"].forEach(function (id) {
+        const grid = dotaHud.FindChildTraverse(id);
+        if (grid) grid.RemoveAndDeleteChildren();
+    });
+    // Rebuild immediately as well, including when Tools reloads this script mid-match.
+    $.DispatchEvent("DOTAGameKeyValuesUpdated");
 })();
 
 // Uncomment any of the following lines in order to disable that portion of the default UI

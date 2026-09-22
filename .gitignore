@@ -4,6 +4,9 @@
 # Exclude .gitignore
 !/.gitignore
 
+# Local research materials
+/.research/
+
 # Exclude content/dota_addons/skillshot_wars
 !/content
 /content/*
