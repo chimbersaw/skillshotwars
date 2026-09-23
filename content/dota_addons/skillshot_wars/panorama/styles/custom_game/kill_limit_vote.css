@@ -1,0 +1,209 @@
+.KillLimitHud {
+    width: 100%;
+    height: 100%;
+}
+
+#KillLimitVote {
+    horizontal-align: center;
+    vertical-align: center;
+    margin-bottom: 100px;
+    width: 680px;
+    padding: 24px 26px 18px;
+    flow-children: down;
+    background-color: gradient(linear, 0% 0%, 0% 100%, from(#172024fa), to(#080c10fa));
+    border: 2px solid #59635e;
+    border-top: 3px solid #b99a57;
+    box-shadow: #000000bb 0px 0px 24px 4px;
+}
+
+.VoteEyebrow {
+    horizontal-align: center;
+    color: #bba36e;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 6px;
+}
+
+#VoteTitle {
+    width: 100%;
+    text-align: center;
+    font-family: titleFont;
+    font-size: 32px;
+    font-weight: bold;
+    color: #f5eee0;
+    text-shadow: 0px 2px 4px #000000;
+}
+
+#VoteSubtitle {
+    width: 100%;
+    text-align: center;
+    color: #a5b0b5;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+#KillLimitOptions {
+    horizontal-align: center;
+    flow-children: right;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.KillOption {
+    width: 196px;
+    padding: 8px 4px 10px;
+    margin: 0px 5px;
+    flow-children: down;
+    border: 1px solid #ffffff08;
+    background-color: #ffffff03;
+    transition-property: background-color, border, brightness, opacity;
+    transition-duration: 0.15s;
+}
+
+.KillOption:enabled:hover {
+    brightness: 1.3;
+    background-color: #ffffff0a;
+}
+
+.KillOption.Selected {
+    border: 1px solid #c6a767;
+    background-color: #c6a76712;
+}
+
+.VoteCount {
+    width: 100%;
+    text-align: center;
+    color: #a8b7be;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.KillBadge {
+    width: 116px;
+    height: 120px;
+    horizontal-align: center;
+    flow-children: down;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.Short .KillBadge {
+    background-image: url("file://{images}/custom_game/voting/goal_short.psd");
+}
+
+.Medium .KillBadge {
+    background-image: url("file://{images}/custom_game/voting/goal_med.psd");
+}
+
+.Long .KillBadge {
+    background-image: url("file://{images}/custom_game/voting/goal_long.psd");
+}
+
+.BadgeCaption {
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+    color: #88641a;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.KillNumber {
+    horizontal-align: center;
+    margin-top: -4px;
+    font-size: 64px;
+    font-weight: bold;
+    color: #9f6922;
+    text-shadow: 1px 2px 2px #61481e;
+}
+
+.Medium .KillNumber {
+    color: #62676a;
+}
+
+.Long .KillNumber {
+    color: #a77a18;
+}
+
+.OptionLabel {
+    width: 100%;
+    margin-top: 8px;
+    text-align: center;
+    color: #e7e6df;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.DefaultLabel {
+    width: 100%;
+    text-align: center;
+    color: #bba36e;
+    font-size: 14px;
+    margin-top: 4px;
+    opacity: 0;
+}
+
+.MapDefault .DefaultLabel {
+    opacity: 1;
+}
+
+#ConfirmKillVote {
+    horizontal-align: center;
+    width: 300px;
+    margin: 0px;
+}
+
+#ConfirmKillVoteText {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#KillVoteStatus {
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: #a5b0b5;
+}
+
+#KillVoteCountdown {
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #d7e0e3;
+}
+
+.Finished .Losing {
+    opacity: 0.3;
+}
+
+.Finished .Winner {
+    border-color: #d9bc72;
+    background-color: #d9bc7218;
+    brightness: 1.3;
+}
+
+.Finished #KillVoteStatus {
+    color: #e4c782;
+    font-size: 22px;
+}
+
+#KillLimitGoal {
+    horizontal-align: center;
+    margin-top: 84px;
+    padding: 3px 12px;
+    background-color: #10171cd9;
+    border-bottom: 1px solid #b99a5788;
+}
+
+#KillLimitGoalText {
+    color: #dcc792;
+    font-size: 16px;
+    text-shadow: 0px 1px 2px #000000;
+}

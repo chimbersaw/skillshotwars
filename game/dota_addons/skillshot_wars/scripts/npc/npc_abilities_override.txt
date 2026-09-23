@@ -122,6 +122,8 @@
     "item_necronomicon_3"           "REMOVE" // disabled
     "item_recipe_ultimate_scepter"  "REMOVE"
     "item_ultimate_scepter"         "REMOVE"
+    "item_recipe_ultimate_scepter_2" "REMOVE"
+    "item_ultimate_scepter_2"       "REMOVE"
     "item_recipe_refresher"         "REMOVE"
     "item_recipe_assault"           "REMOVE"
     "item_assault"                  "REMOVE"

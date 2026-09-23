@@ -9,6 +9,7 @@ require('libraries/selection')
 require('settings')
 --require('debug_settings')
 require('map_settings')
+require('kill_limit_vote')
 -- events.lua is where you can specify the actions to be taken when any event occurs and is one of the core barebones files.
 require('events')
 -- filters.lua
@@ -50,6 +51,8 @@ function barebones:OnAllPlayersLoaded()
 end
 
 function barebones:OnPreGame()
+    self:StartKillLimitVote()
+
     local gamemode = GameRules:GetGameModeEntity()
     gamemode:SetCustomDireScore(0)
     gamemode:SetCustomRadiantScore(0)
@@ -64,6 +67,11 @@ end
   is useful for starting any game logic timers/thinkers, beginning the first round, etc.
 ]]
 function barebones:OnGameInProgress()
+    self:FinishKillLimitVote()
+    self:ClearKillLimitVoteLocks()
+
+    CustomRuneSystem:StartRuneSpawning()
+
     DebugPrint("[BAREBONES] The game has officially begun.")
 
     -- If the day/night is not changed at 00:00, the following line is needed:
@@ -96,6 +104,7 @@ end
 -- It can be used to pre-initialize any values/tables that will be needed later
 function barebones:InitGameMode()
     DebugPrint("[BAREBONES] Starting to load Game Rules.")
+    self:InitKillLimitVote()
 
     -- Setup rules
     GameRules:SetSameHeroSelectionEnabled(ALLOW_SAME_HERO_SELECTION)
@@ -105,7 +114,8 @@ function barebones:InitGameMode()
     GameRules:SetHeroSelectionTime(HERO_SELECTION_TIME) -- THIS IS IGNORED when "EnablePickRules" is "1" in 'addoninfo.txt' !
     GameRules:SetHeroSelectPenaltyTime(HERO_SELECTION_PENALTY_TIME)
 
-    GameRules:SetPreGameTime(PRE_GAME_TIME)
+    -- Voting and its result screen run before the full preparation period.
+    GameRules:SetPreGameTime(PRE_GAME_TIME + self:GetKillLimitVoteDuration())
     GameRules:SetPostGameTime(POST_GAME_TIME)
     GameRules:SetStrategyTime(STRATEGY_TIME)
     if SHOWCASE_TIME then
@@ -274,6 +284,7 @@ function barebones:InitGameMode()
     DebugPrint("[BAREBONES] Done with setting Filters.")
 
     -- Global Lua Modifiers
+    LinkLuaModifier("modifier_kill_limit_vote_lock", "modifiers/modifier_kill_limit_vote_lock.lua", LUA_MODIFIER_MOTION_NONE)
     LinkLuaModifier("modifier_custom_invulnerable", "modifiers/modifier_custom_invulnerable.lua", LUA_MODIFIER_MOTION_NONE)
     LinkLuaModifier("modifier_custom_passive_gold", "modifiers/modifier_custom_passive_gold.lua", LUA_MODIFIER_MOTION_NONE)
     LinkLuaModifier("modifier_reduced_fountain_healing", "modifiers/modifier_reduced_fountain_healing.lua", LUA_MODIFIER_MOTION_NONE)

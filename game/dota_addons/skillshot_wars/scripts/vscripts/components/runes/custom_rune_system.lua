@@ -29,10 +29,6 @@ function CustomRuneSystem:Init()
         PrintTable(self.powerup_rune_locations)
     end
 
-    Timers:CreateTimer(PRE_GAME_TIME + FIRST_POWER_RUNE_SPAWN_TIME, function()
-        CustomRuneSystem:SpawnRunes("powerup")
-    end)
-
     self.power_runes_enums = {
         DOTA_RUNE_DOUBLEDAMAGE,
         DOTA_RUNE_HASTE,
@@ -67,6 +63,17 @@ function CustomRuneSystem:Init()
     --        CustomRuneSystem:SpawnRunes("bounty")
     --    end)
     --end
+end
+
+-- Count from the actual horn, independently of voting and pre-game duration.
+function CustomRuneSystem:StartRuneSpawning()
+    if USE_DEFAULT_RUNE_SYSTEM or self.runes_started then
+        return
+    end
+    self.runes_started = true
+    Timers:CreateTimer(FIRST_POWER_RUNE_SPAWN_TIME, function()
+        self:SpawnRunes("powerup")
+    end)
 end
 
 function CustomRuneSystem:ResetPowerRuneCycle()

@@ -5,6 +5,22 @@
     {
         "addon_game_name"                                            "Skillshot Wars"
 
+        "kill_vote_title"                                           "Vote on game length"
+        "kill_vote_subtitle"                                        "Choose the team kill limit to win"
+        "kill_vote_kills"                                           "Kills"
+        "kill_vote_short"                                           "Short"
+        "kill_vote_medium"                                          "Medium"
+        "kill_vote_long"                                            "Long"
+        "kill_vote_default"                                         "Map default"
+        "kill_vote_count"                                           "Votes: {d:votes}"
+        "kill_vote_confirm"                                         "Cast vote"
+        "kill_vote_confirmed"                                       "Vote counted"
+        "kill_vote_hint"                                            "Confirm your choice. Ties favor the lower limit."
+        "kill_vote_sending"                                         "Sending vote..."
+        "kill_vote_your_vote"                                       "Your vote: {d:kills} kills"
+        "kill_vote_result"                                          "First team to {d:kills} kills wins!"
+        "kill_vote_goal"                                            "Goal: {d:kills} kills"
+
         "DOTA_Tooltip_ability_shlizi"                                "Shlizi"
 
         "DOTA_Tooltip_ability_pudge_meat_hook"                       "Meat Hook"

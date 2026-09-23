@@ -115,6 +115,8 @@ function barebones:OnNPCSpawned(keys)
         npc.bFirstSpawned = true
         self:OnHeroInGame(npc)
     end
+
+    self:ApplyKillLimitVoteLock(npc)
 end
 
 --[[

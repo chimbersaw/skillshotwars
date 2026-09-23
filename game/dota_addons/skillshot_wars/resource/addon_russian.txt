@@ -5,6 +5,22 @@
     {
         "addon_game_name"                                            "Skillshot Wars"
 
+        "kill_vote_title"                                           "Голосование за длину игры"
+        "kill_vote_subtitle"                                        "Выберите число убийств для победы команды"
+        "kill_vote_kills"                                           "Убийств"
+        "kill_vote_short"                                           "Короткая"
+        "kill_vote_medium"                                          "Средняя"
+        "kill_vote_long"                                            "Длинная"
+        "kill_vote_default"                                         "По умолчанию"
+        "kill_vote_count"                                           "Голосов: {d:votes}"
+        "kill_vote_confirm"                                         "Проголосовать"
+        "kill_vote_confirmed"                                       "Голос учтён"
+        "kill_vote_hint"                                            "Подтвердите выбор. При ничьей - меньший лимит."
+        "kill_vote_sending"                                         "Отправка голоса..."
+        "kill_vote_your_vote"                                       "Ваш голос: {d:kills} убийств"
+        "kill_vote_result"                                          "Для победы нужно {d:kills} убийств!"
+        "kill_vote_goal"                                            "Цель: {d:kills} убийств"
+
         "DOTA_Tooltip_ability_shlizi"                                "Shlizi"
 
         "DOTA_Tooltip_ability_pudge_meat_hook"                       "Meat Hook"
@@ -61,7 +77,7 @@
         "DOTA_Tooltip_ability_item_glimmer_cape_skillshot_Lore"                   ""
 
         "DOTA_Tooltip_ability_item_manta_skillshot"                               "Manta Style"
-        "DOTA_Tooltip_ability_item_manta_skillshot_Description"                   "<h1>Активное: Mirror Image</h1> Создаёт %images_count% иллюзию вашего героя, которая существует %illusion_duration% сек.<br><br>Иллюзия получает %tooltip_damage_incoming_total_pct%%% урона, а наносимый ей урон зависит от типа атаки владельца: иллюзии ближнего боя наносят %tooltip_damage_outgoing_melee%%% урона, а иллюзии дальнего боя — %tooltip_damage_outgoing_ranged%%%. <br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нормальное</span>"
+        "DOTA_Tooltip_ability_item_manta_skillshot_Description"                   "<h1>Активное: Mirror Image</h1> Создаёт %images_count% иллюзию вашего героя, которая существует %illusion_duration% сек.<br><br>Иллюзия получает %tooltip_damage_incoming_total_pct%%% урона, а наносимый ей урон зависит от типа атаки владельца: иллюзии ближнего боя наносят %tooltip_damage_outgoing_melee%%% урона, а иллюзии дальнего боя - %tooltip_damage_outgoing_ranged%%%. <br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нормальное</span>"
         "DOTA_Tooltip_ability_item_manta_skillshot_bonus_movement_speed"          "%+$move_speed"
         "DOTA_Tooltip_ability_item_manta_skillshot_Lore"                          ""
         "DOTA_Tooltip_ability_item_manta_skillshot_bonus_agility"                 ""

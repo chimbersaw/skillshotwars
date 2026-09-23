@@ -1,0 +1,53 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+        <include src="file://{resources}/styles/custom_game/kill_limit_vote.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/kill_limit_vote.js" />
+    </scripts>
+    <Panel class="KillLimitHud" hittest="false">
+        <Panel id="KillLimitGoal" hittest="false" visible="false">
+            <Label id="KillLimitGoalText" />
+        </Panel>
+        <Panel id="KillLimitVote" visible="false">
+            <Label class="VoteEyebrow" text="SKILLSHOT WARS" />
+            <Label id="VoteTitle" text="#kill_vote_title" />
+            <Label id="VoteSubtitle" text="#kill_vote_subtitle" />
+            <Panel id="KillLimitOptions">
+                <Button id="KillOption30" class="KillOption Short" onactivate="SelectKillLimit(30)">
+                    <Label id="KillCount30" class="VoteCount" />
+                    <Panel class="KillBadge" hittest="false">
+                        <Label class="BadgeCaption" text="#kill_vote_kills" />
+                        <Label class="KillNumber" text="30" />
+                    </Panel>
+                    <Label class="OptionLabel" text="#kill_vote_short" />
+                    <Label class="DefaultLabel" text="#kill_vote_default" />
+                </Button>
+                <Button id="KillOption40" class="KillOption Medium" onactivate="SelectKillLimit(40)">
+                    <Label id="KillCount40" class="VoteCount" />
+                    <Panel class="KillBadge" hittest="false">
+                        <Label class="BadgeCaption" text="#kill_vote_kills" />
+                        <Label class="KillNumber" text="40" />
+                    </Panel>
+                    <Label class="OptionLabel" text="#kill_vote_medium" />
+                    <Label class="DefaultLabel" text="#kill_vote_default" />
+                </Button>
+                <Button id="KillOption50" class="KillOption Long" onactivate="SelectKillLimit(50)">
+                    <Label id="KillCount50" class="VoteCount" />
+                    <Panel class="KillBadge" hittest="false">
+                        <Label class="BadgeCaption" text="#kill_vote_kills" />
+                        <Label class="KillNumber" text="50" />
+                    </Panel>
+                    <Label class="OptionLabel" text="#kill_vote_long" />
+                    <Label class="DefaultLabel" text="#kill_vote_default" />
+                </Button>
+            </Panel>
+            <Button id="ConfirmKillVote" class="PopupButton Green" onactivate="ConfirmKillLimitVote()" enabled="false">
+                <Label id="ConfirmKillVoteText" text="#kill_vote_confirm" />
+            </Button>
+            <Label id="KillVoteStatus" />
+            <Label id="KillVoteCountdown" />
+        </Panel>
+    </Panel>
+</root>

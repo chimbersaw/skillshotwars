@@ -4,6 +4,6 @@
     </scripts>
 
     <Panel>
-        <!-- CustomUIElements go here.-->
+        <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/kill_limit_vote.xml" />
     </Panel>
 </root>
