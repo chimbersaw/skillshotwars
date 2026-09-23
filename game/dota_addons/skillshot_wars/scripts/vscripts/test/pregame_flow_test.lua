@@ -5,14 +5,13 @@ barebones = {}
 class = function(methods) return methods end
 DebugPrint = function() end
 DOTA_TEAM_GOODGUYS, DOTA_TEAM_BADGUYS = 2, 3
+-- Stand-ins for engine team constants used by the real settings file.
+for index = 1, 8 do _G["DOTA_TEAM_CUSTOM_" .. index] = 5 + index end
 DOTA_GAMERULES_STATE_PRE_GAME, DOTA_GAMERULES_STATE_GAME_IN_PROGRESS = 7, 8
 DOTA_RUNE_DOUBLEDAMAGE, DOTA_RUNE_HASTE, DOTA_RUNE_ILLUSION = 0, 1, 2
 DOTA_RUNE_INVISIBILITY, DOTA_RUNE_REGENERATION, DOTA_RUNE_ARCANE = 3, 4, 5
 MODIFIER_STATE_STUNNED = 1
-CUSTOM_TEAM_PLAYER_COUNT = {}
-PRE_GAME_TIME = 15
-USE_DEFAULT_RUNE_SYSTEM = false
-POWER_RUNE_SPAWN_INTERVAL = 60
+dofile(scripts .. "settings.lua")
 HeroList = { GetAllHeroes = function() return {} end }
 CustomGameEventManager = { RegisterListener = function() end }
 CustomNetTables = { SetTableValue = function() end }

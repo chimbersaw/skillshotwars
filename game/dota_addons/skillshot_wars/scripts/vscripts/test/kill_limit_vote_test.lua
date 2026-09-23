@@ -1,4 +1,4 @@
--- Run from the repository root:
+-- Run from the Dota installation root:
 -- lua game/dota_addons/skillshot_wars/scripts/vscripts/test/kill_limit_vote_test.lua
 local scripts = "game/dota_addons/skillshot_wars/scripts/vscripts/"
 barebones = {}
@@ -7,7 +7,6 @@ DOTA_TEAM_BADGUYS = 3
 DOTA_GAMERULES_STATE_PRE_GAME = 7
 DOTA_GAMERULES_STATE_GAME_IN_PROGRESS = 8
 END_GAME_ON_KILLS = true
-PRE_GAME_TIME = 15
 CUSTOM_TEAM_PLAYER_COUNT = {}
 DebugPrint = function() end
 
@@ -160,8 +159,17 @@ for _, limit in ipairs({30, 40, 50}) do
     end
 end
 
--- Voting stuns existing/late heroes but leaves orders to the engine's normal rules.
+-- Voting stuns existing/late heroes without rejecting orders in the filter.
 dofile(scripts .. "filters.lua")
+local function assertOrdersPassThrough(mode)
+    -- Direct filter calls check its return value, not engine dispatch or execution.
+    for order = 0, 39 do
+        for queue = 0, 1 do
+            assert(mode:OrderFilter({ order_type = order, queue = queue }) == true,
+                string.format("Order %d (queue=%d) was rejected", order, queue))
+        end
+    end
+end
 local function newHero()
     return {
         bFirstSpawned = true,
@@ -181,16 +189,15 @@ end
 mode = reset("skillshot_wars")
 heroes = { newHero() }
 local lockDuration = mode:GetKillLimitVoteDuration()
-assert(PRE_GAME_TIME == 15 and lockDuration > 0)
+assert(lockDuration > 0)
 assert(not mode:IsKillLimitVoteBlockingGameplay())
 mode:StartKillLimitVote()
 assert(heroes[1].stopped and heroes[1].lockDuration == lockDuration)
-for order = 1, 39 do
-    assert(mode:OrderFilter({ order_type = order, queue = 1 }))
-end
+assertOrdersPassThrough(mode)
 now = snapshot.ends_at
 timer.callback()
 assert(mode:IsKillLimitVoteBlockingGameplay(), "Lock persists during the result screen")
+assertOrdersPassThrough(mode)
 now = snapshot.result_ends_at - 1
 local lateHero = newHero()
 EntIndexToHScript = function() return lateHero end
@@ -198,8 +205,7 @@ mode:OnNPCSpawned({ entindex = 3 })
 assert(lateHero.lockDuration == 1 and lateHero.stopped)
 now = snapshot.result_ends_at
 assert(not mode:IsKillLimitVoteBlockingGameplay())
-assert(mode:OrderFilter({ order_type = 1 }))
-assert(mode:OrderFilter({ order_type = 5 }))
+assertOrdersPassThrough(mode)
 mode:ClearKillLimitVoteLocks()
 assert(heroes[1].lockRemoved)
 
@@ -218,4 +224,4 @@ mode:StartKillLimitVote()
 mode:FinishKillLimitVote()
 assert(mode.killLimitVote == nil and mode:GetKillLimitVoteDuration() == 0)
 assert(not mode:IsKillLimitVoteBlockingGameplay())
-print("Kill limit vote: defaults, ties, plurality, validation, deadlines, hero locks, order passthrough and victory thresholds passed")
+print("Kill limit vote: defaults, ties, plurality, validation, deadlines, hero locks, order pass-through and victory thresholds passed")

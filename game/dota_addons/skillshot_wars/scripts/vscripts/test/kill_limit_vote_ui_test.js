@@ -1,4 +1,5 @@
-// Run from the repository root with node followed by this file's path.
+// Run from the Dota installation root:
+// node game/dota_addons/skillshot_wars/scripts/vscripts/test/kill_limit_vote_ui_test.js
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const vm = require("node:vm");
@@ -18,15 +19,22 @@ for (const match of styles.matchAll(/file:\/\/\{images\}\/([^"']+)/g)) {
     assert(fs.existsSync(panorama + "images/" + match[1]), match[1]);
 }
 
+// Server snapshot fixture. A nonzero start verifies that the UI uses absolute deadlines.
+const voteStartedAt = 100;
+const voteDuration = 13;
+const resultDuration = 2;
+const reconnectAt = voteStartedAt + 5;
+
 function initialState(defaultKills = 50) {
     return {
         active: 1, finished: 0, default_kills: defaultKills, kills_to_win: defaultKills,
-        ends_at: 12, result_ends_at: 14,
+        ends_at: voteStartedAt + voteDuration,
+        result_ends_at: voteStartedAt + voteDuration + resultDuration,
         counts: { "30": 0, "40": 0, "50": 0 }, votes: {},
     };
 }
 
-function client(initial, team = 2, startTime = 0, startPhase = 7) {
+function client(initial, team = 2, startTime = voteStartedAt, startPhase = 7) {
     const panels = {};
     for (const match of layout.matchAll(/id="([^"]+)"/g)) {
         assert(!panels["#" + match[1]], "Duplicate panel ID");
@@ -82,7 +90,7 @@ let data = initialState();
 let ui = client(data);
 assert(ui.panels["#KillLimitVote"].visible);
 assert(ui.panels["#KillOption50"].classes.Selected);
-assert.equal(ui.panels["#KillVoteCountdown"].text, "12");
+assert.equal(ui.panels["#KillVoteCountdown"].text, String(voteDuration));
 assert.equal(ui.sent.length, 0, "Preselection must not submit an automatic vote");
 ui.context.SelectKillLimit(40);
 ui.context.ConfirmKillLimitVote();
@@ -96,24 +104,25 @@ ui.receive(data);
 assert(ui.panels["#ConfirmKillVoteText"].text.includes("kill_vote_confirmed"));
 ui.context.SelectKillLimit(30);
 assert(ui.panels["#KillOption40"].classes.Selected);
-ui.advance(5);
-assert.equal(ui.panels["#KillVoteCountdown"].text, "7");
+ui.advance(reconnectAt);
+assert.equal(ui.panels["#KillVoteCountdown"].text, String(data.ends_at - reconnectAt));
 assert.equal(ui.scheduled.size, 1, "Only one countdown callback may be pending");
 
 // Reconnection restores the vote, counts and remaining time without resubmitting.
-ui = client(data, 2, 5);
+ui = client(data, 2, reconnectAt);
 assert(ui.panels["#KillOption40"].classes.Selected);
 assert(!ui.panels["#ConfirmKillVote"].enabled);
 assert.equal(ui.panels["#KillCount40"].variables.votes, 1);
-assert.equal(ui.panels["#KillVoteCountdown"].text, "7");
+assert.equal(ui.panels["#KillVoteCountdown"].text, String(data.ends_at - reconnectAt));
 assert.equal(ui.sent.length, 0);
 
 // Winner display expires once, then the persistent goal follows the server result.
-data = { ...data, active: 0, finished: 1, kills_to_win: 40, result_ends_at: 14 };
+ui.advance(data.ends_at);
+data = { ...data, active: 0, finished: 1, kills_to_win: 40 };
 ui.receive(data);
 assert(ui.panels["#KillOption40"].classes.Winner);
 assert(ui.panels["#KillOption30"].classes.Losing);
-ui.advance(14);
+ui.advance(data.result_ends_at);
 assert(!ui.panels["#KillLimitVote"].visible);
 assert(ui.panels["#KillLimitGoal"].visible);
 assert.equal(ui.panels["#KillLimitGoal"].variables.kills, 40);
@@ -122,7 +131,7 @@ ui.phase(8);
 assert(ui.panels["#KillLimitGoal"].visible);
 ui.phase(9);
 assert(!ui.panels["#KillLimitGoal"].visible);
-ui = client(data, 2, 100, 8);
+ui = client(data, 2, data.result_ends_at + 1, 8);
 assert(!ui.panels["#KillLimitVote"].visible);
 assert(ui.panels["#KillLimitGoal"].visible);
 
@@ -133,18 +142,20 @@ for (const team of [1, null]) {
     assert.equal(ui.sent.length, 0);
     assert(!ui.panels["#ConfirmKillVote"].enabled);
 }
-ui = client(initialState(30));
+data = initialState(30);
+ui = client(data);
 assert(ui.panels["#KillOption30"].classes.Selected);
 ui.context.SelectKillLimit(60);
 assert(ui.panels["#KillOption30"].classes.Selected);
-ui.advance(12);
+ui.advance(data.ends_at);
 ui.context.ConfirmKillLimitVote();
 assert.equal(ui.sent.length, 0);
 assert(!ui.panels["#ConfirmKillVote"].enabled);
 
 // A delayed result snapshot cannot leave the popup over the preparation period.
-ui = client(initialState());
-ui.advance(14);
+data = initialState();
+ui = client(data);
+ui.advance(data.result_ends_at);
 assert(!ui.panels["#KillLimitVote"].visible);
 assert.equal(ui.scheduled.size, 0);
 
@@ -153,7 +164,7 @@ ui = client(null);
 assert(!ui.panels["#KillLimitVote"].visible);
 ui.receive(initialState());
 assert(ui.panels["#KillLimitVote"].visible);
-ui = client(initialState(), 2, 0, 6);
+ui = client(initialState(), 2, voteStartedAt, 6);
 assert(!ui.panels["#KillLimitVote"].visible);
 ui.phase(7);
 assert(ui.panels["#KillLimitVote"].visible);
