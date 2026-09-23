@@ -1,0 +1,15 @@
+"DOTAAbilities"
+{
+    "item_flask"
+    {
+        "SecretShop"                    "0"
+        "ItemCost"                      "100"
+
+        "AbilityValues"
+        {
+          "buff_duration"               "13"
+          "health_regen"                "30"
+          "break_on_hero_damage"        "1"
+        }
+    }
+}

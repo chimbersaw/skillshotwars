@@ -1,0 +1,49 @@
+"DOTAAbilities"
+{
+    "item_citrulline_malate"
+    {
+        // Item Stuff
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_lua"
+        "AbilityTextureName"            "item_citrulline_malate"
+        "Model"                         "models/props_gameplay/mango.vmdl"
+        "ScriptFile"                    "items/citrulline_malate.lua"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "100"
+        "ItemShopTags"                  "consumable"
+        "ItemQuality"                   "consumable"
+        "ItemStackable"                 "1"
+        "ItemStackableMax"              "5"
+        "ItemStockMax"                  "5"
+        "ItemStockInitial"              "1"
+        "ItemStockTime"                 "180"
+        "ItemInitialCharges"            "1"
+        "ItemPermanent"                 "0"
+        "SecretShop"                    "0"
+
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+        "AbilityCooldown"               "0.0"
+
+        // Precache
+        //-------------------------------------------------------------------------------------------------------------
+        "precache"
+        {
+          "particle"                    "particles/items2_fx/satanic_buff.vpcf"
+        }
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+          "heal_amount"         "250"
+          "duration"            "5"
+          "bonus_strength"      "20"
+          "bonus_spell_amp"     "20"
+        }
+    }
+}

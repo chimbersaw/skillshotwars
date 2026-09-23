@@ -1,0 +1,7 @@
+"DOTAAbilities"
+{
+    "item_ward_sentry"
+    {
+        "SecretShop"                    "0"
+    }
+}

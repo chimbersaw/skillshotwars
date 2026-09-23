@@ -1,0 +1,9 @@
+"DOTAAbilities"
+{
+    "item_blink"
+    {
+        "SecretShop"                    "1"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1500"
+    }
+}

@@ -1,0 +1,56 @@
+"DOTAAbilities"
+{
+    //=================================================================================================================
+    // Glimmer Cape
+    //=================================================================================================================
+    "item_glimmer_cape_skillshot"
+    {
+        // Item Stuff
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_glimmer_cape"
+        "AbilityTextureName"            "item_glimmer_cape"
+
+        "AbilitySharedCooldown"         "glimmer"
+        "ItemStackable"                 "0"
+        "ItemPermanent"                 "1"
+        "ItemShareability"              "ITEM_NOT_SHAREABLE"
+        "ItemKillable"                  "1"
+        "ItemDroppable"                 "1"
+        "SecretShop"                    "1"
+
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "900"
+        "AbilityCooldown"               "16.0"
+        "AbilityManaCost"               "0"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1200"
+        "ItemShopTags"                  ""
+        "ItemPurchasable"               "1"
+        "ItemQuality"                   "rare"
+        "ItemAliases"                   "glimmer cape"
+        "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+          "initial_fade_delay"          "0.5"
+          "secondary_fade_delay"        "0.5"
+          "active_movement_speed"       "40"
+          "duration"                    "5"
+          "bonus_magical_armor"         "0"
+          "barrier_block"               "150"
+        }
+    }
+}

@@ -4,6 +4,14 @@
     // - REMOVE ANY ITEM YOU DON'T WANT TO BE BUYABLE IN THE SHOP -
     // -----------------------------------------------------------
 
+    // Replaced by the standalone Skillshot items. Recipes remain removed below.
+    "item_manta"                    "REMOVE"
+    "item_glimmer_cape"             "REMOVE"
+    "item_kaya"                     "REMOVE"
+    "item_octarine_core"            "REMOVE"
+    "item_refresher"                "REMOVE"
+    "item_bloodstone"               "REMOVE"
+
     "item_blades_of_attack"         "REMOVE"
     "item_broadsword"               "REMOVE"
     "item_chainmail"                "REMOVE"

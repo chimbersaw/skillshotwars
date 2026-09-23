@@ -1,0 +1,14 @@
+"DOTAAbilities"
+{
+    "item_boots"
+    {
+        "SecretShop"                    "1"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "500"
+
+        "AbilityValues"
+        {
+          "bonus_movement_speed"        "45"
+        }
+    }
+}

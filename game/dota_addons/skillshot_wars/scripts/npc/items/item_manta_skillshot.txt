@@ -1,0 +1,63 @@
+"DOTAAbilities"
+{
+    //=================================================================================================================
+    // Manta style
+    //=================================================================================================================
+    "item_manta_skillshot"
+    {
+        // Item Stuff
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_manta"
+        "AbilityTextureName"            "item_manta"
+
+        "AbilitySharedCooldown"         "manta"
+        "ItemStackable"                 "0"
+        "ItemPermanent"                 "1"
+        "ItemShareability"              "ITEM_NOT_SHAREABLE"
+        "ItemKillable"                  "1"
+        "ItemDroppable"                 "1"
+
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "18.0"
+        "AbilityCastPoint"              "0.0"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "0"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1000"
+        "ItemPurchasable"               "1"
+        "SecretShop"                    "1"
+        "ItemShopTags"                  "agi;str;int;attack_speed;move_speed;hard_to_tag"
+        "ItemQuality"                   "component"
+        "ItemAliases"                   "manta style"
+        "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+          "bonus_strength"                       "0"
+          "bonus_agility"                        "0"
+          "bonus_intellect"                      "0"
+          "bonus_attack_speed"                   "0"
+          "bonus_movement_speed"                 "5"
+          "images_count"                         "1"
+          "illusion_duration"                    "18"
+          "images_do_damage_percent_melee"       "-100"
+          "tooltip_damage_outgoing_melee"        "0"
+          "images_take_damage_percent"           "9900"
+          "tooltip_damage_incoming_total_pct"    "10000"
+          "images_do_damage_percent_ranged"      "-100"
+          "tooltip_damage_outgoing_ranged"       "0"
+          "invuln_duration"                      "0.2"
+          "vision_radius"                        "1000"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+"DOTAAbilities"
+{
+    "item_tpscroll"
+    {
+        "SecretShop"                    "0"
+        "AbilityManaCost"               "0"
+        "ItemCost"                      "50"
+    }
+}

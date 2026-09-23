@@ -1,0 +1,70 @@
+"DOTAAbilities"
+{
+    "item_scout_bot"
+    {
+        // Item Stuff
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "item_scout_bot"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1200"
+        "ItemKillable"                  "1"
+        "ItemPurchasable"               "1"
+        "ItemDroppable"                 "1"
+        "ItemShareability"              "ITEM_NOT_SHAREABLE"
+        "ItemStackable"                 "0"
+        "ItemPermanent"                 "1"
+        "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "ItemQuality"                   "artifact"
+        "SecretShop"                    "1"
+
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+
+        "AbilityCastPoint"              "0.3"
+        "AbilityCastRange"              "0"
+        "AbilityCooldown"               "20.0"
+        "AbilityManaCost"               "0"
+
+        // Precache
+        //-------------------------------------------------------------------------------------------------------------
+        "precache"
+        {
+            "particle" "particles/units/heroes/hero_tinker/tinker_machine.vpcf"
+        }
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+          "distance"              "9000"
+          "speed"                 "500"
+          "vision_radius"         "900"
+        }
+
+        "OnSpellStart"
+        {
+            "LinearProjectile"
+            {
+                "Target"            "POINT"
+                "EffectName"        "particles/units/heroes/hero_tinker/tinker_machine.vpcf"
+                "MoveSpeed"            "%speed"
+                "StartRadius"        "0"
+                "EndRadius"            "0"
+                "FixedDistance"        "%distance"
+                "StartPosition"        "attach_attack1"
+                "AbilityUnitTargetType"    "DOTA_UNIT_TARGET_NONE"
+                "TargetTeams"        "DOTA_UNIT_TARGET_TEAM_NONE"
+                "HasFrontalCone"    "0"
+                "ProvidesVision"    "1"
+                "VisionRadius"        "%vision_radius"
+            }
+        }
+    }
+}

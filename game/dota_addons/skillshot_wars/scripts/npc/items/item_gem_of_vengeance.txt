@@ -1,0 +1,90 @@
+"DOTAAbilities"
+{
+    "item_gem_of_vengeance"
+    {
+        // Item Stuff
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_datadriven"
+        "AbilityTextureName"            "item_gem_of_vengeance"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1500"
+        "ItemQuality"                   "artifact"
+        "ItemKillable"                  "1"
+        "ItemPurchasable"               "1"
+        "ItemDroppable"                 "1"
+        "ItemShareability"              "ITEM_NOT_SHAREABLE"
+        "ItemStackable"                 "0"
+        "ItemPermanent"                 "1"
+        "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "SecretShop"                    "1"
+
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_BOTH"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+
+        "AbilityCastPoint"              "0.3"
+        "AbilityCastRange"              "1300"
+        "AbilityCooldown"               "15.0"
+        "AbilityManaCost"               "0"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+          "range"                       "1300"
+        }
+
+        "OnSpellStart"
+        {
+            "FireSound"
+            {
+                "EffectName"    "Hero_VengefulSpirit.NetherSwap"
+                "Target"         "TARGET"
+            }
+
+            "FireSound"
+            {
+                "EffectName"    "Hero_VengefulSpirit.NetherSwap"
+                "Target"         "CASTER"
+            }
+
+            "FireEffect"
+            {
+                "EffectName"        "particles/units/heroes/hero_vengeful/vengeful_nether_swap.vpcf"
+                "EffectAttachType"  "start_at_customorigin"
+
+                "ControlPointEntities"
+                {
+                    "TARGET"    "follow_origin"
+                    "CASTER"    "follow_origin"
+                }
+            }
+
+            "FireEffect"
+            {
+                "EffectName"        "particles/units/heroes/hero_vengeful/vengeful_nether_swap_pink.vpcf"
+                "EffectAttachType"  "start_at_customorigin"
+
+                "ControlPointEntities"
+                {
+                    "CASTER"    "follow_origin"
+                    "TARGET"    "follow_origin"
+                }
+            }
+
+            "RunScript"
+            {
+                "ScriptFile"    "items/swap.lua"
+                "Function"      "swap_ability"
+            }
+        }
+    }
+}

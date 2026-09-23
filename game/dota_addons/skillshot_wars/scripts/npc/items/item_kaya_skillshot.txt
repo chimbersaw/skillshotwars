@@ -1,0 +1,44 @@
+"DOTAAbilities"
+{
+    //=================================================================================================================
+    // Kaya
+    //=================================================================================================================
+    "item_kaya_skillshot"
+    {
+        // Item Stuff
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_kaya"
+        "AbilityTextureName"            "item_kaya"
+
+        "ItemDisassembleRule"           "DOTA_ITEM_DISASSEMBLE_NEVER"
+        "ItemStackable"                 "0"
+        "ItemPermanent"                 "1"
+        "ItemShareability"              "ITEM_NOT_SHAREABLE"
+        "ItemKillable"                  "1"
+        "ItemDroppable"                 "1"
+        "SecretShop"                    "1"
+
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemPurchasable"               "1"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1500"
+        "ItemShopTags"                  "int;mana;magic_dmg"
+        "ItemQuality"                   "epic"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH"
+        "SuggestLategame"               "1"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+          "bonus_intellect"       "0"
+          "spell_amp"             "15"
+          "mana_regen_multiplier" "0"
+        }
+    }
+}

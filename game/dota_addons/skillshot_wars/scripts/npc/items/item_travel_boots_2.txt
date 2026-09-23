@@ -1,0 +1,67 @@
+"DOTAAbilities"
+{
+    //=================================================================================================================
+    // Recipe: Travel Boots
+    //=================================================================================================================
+    "item_recipe_travel_boots_2"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "Model"                                  "models/props_gameplay/recipe.vmdl"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemSellable"                           "1"
+        "ItemCost"                               "1000"
+        "ItemShopTags"                           ""
+        "SecretShop"                             "1"
+
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                             "1"
+        "ItemResult"                             "item_travel_boots_2"
+        "ItemRequirements"
+        {
+          "01"                                   "item_boots*"
+        }
+    }
+
+    //=================================================================================================================
+    // Travel Boots 2
+    //=================================================================================================================
+    "item_travel_boots_2"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemPurchasable"               "1"
+        "ItemSellable"                  "1"
+        "ItemCost"                      "1500"
+        "ItemShopTags"                  "teleport;move_speed"
+        "ItemQuality"                   "common"
+        "ItemAliases"                   "bot;boots of travel;tp"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+        "MaxUpgradeLevel"               "2"
+        "ItemBaseLevel"                 "2"
+        "ShouldBeSuggested"             "1"
+
+        "SecretShop"                    "1"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+          "bonus_movement_speed"      "80"
+          "maximum_distance"          "800"
+          "vision_radius"             "200"
+          "tp_cooldown"               "40"
+          "tp_channel_time"           "2"
+        }
+    }
+}

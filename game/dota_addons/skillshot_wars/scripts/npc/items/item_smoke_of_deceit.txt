@@ -1,0 +1,9 @@
+"DOTAAbilities"
+{
+    "item_smoke_of_deceit"
+    {
+        "SecretShop"                    "0"
+        "ItemSellable"                  "1"
+        "ItemStockTime"                 "300.0"
+    }
+}
